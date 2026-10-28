@@ -1,0 +1,113 @@
+{
+  "version": "clinical_memory",
+  "max_collection_actions": 8,
+  "training_seeds": [
+    42,
+    43,
+    44
+  ],
+  "curricula": [
+    "random",
+    "easy_to_hard",
+    "hard_to_easy"
+  ],
+  "doctors": [
+    "2B",
+    "4B",
+    "9B"
+  ],
+  "pool": {
+    "version": "pool_final",
+    "seed": 42,
+    "patients": 336,
+    "test1_share": 0.1,
+    "test1": 34,
+    "test2_share": 0.5,
+    "test2": 168,
+    "train": 302,
+    "same_disease_groups": "configs/disease_groups.json",
+    "division_sha256": "a51494a0ba7ab9ed12703bab70012d6fad7e898db22b96a729d2e736176c8f50"
+  },
+  "test2": {
+    "version": "augmented_final",
+    "folder": "data/augmented",
+    "id_offset": 5000,
+    "opening_min_words": 3,
+    "opening_length_ratio": [
+      0.5,
+      2.0
+    ],
+    "opening_max_similarity": 0.9,
+    "opening_similarity_from_words": 8,
+    "image": {
+      "rotation_degrees": 5.0,
+      "crop_min": 0.94,
+      "brightness": 0.1,
+      "contrast": 0.1,
+      "flip": false,
+      "jpeg_quality": 95
+    }
+  },
+  "learning": {
+    "conditions": [
+      "self",
+      "key",
+      "key_dx"
+    ]
+  },
+  "collection": {
+    "version": "collection_v12",
+    "added_instruction": "Before you finish, you should have obtained the result of an examination that is relevant to the complaint. If a requested examination is not provided, request a different kind of examination that fits the complaint."
+  },
+  "decision": {
+    "version": "reasoned_answer_final",
+    "steps": [
+      "reasoning",
+      "final"
+    ],
+    "reasoning_max_words": 80,
+    "reasoning_max_new_tokens": 256
+  },
+  "memory": {
+    "version": "disease_notes_final",
+    "writer": "doctor_reflection",
+    "reflection_model": "doctor",
+    "global_guidance": false,
+    "visits_per_training_patient": 1,
+    "keywords_min": 2,
+    "keywords_max": 5,
+    "keyword_max_words": 4,
+    "presentation_max_new_tokens": 64,
+    "lesson_format_policy": "settle",
+    "collect_target_words": 45,
+    "diagnose_target_words": 45,
+    "lesson_word_limit_enforced": false,
+    "reflection_max_new_tokens": 1024,
+    "retrieval_top_k": 3,
+    "retrieval_threshold": 0.5,
+    "retrieval_min_terms": 2,
+    "notes_top_k": 5,
+    "notes_threshold": 0.6,
+    "max_lessons": 302
+  },
+  "environment": {
+    "version": "environment_v3_finish_tolerant",
+    "final_input": "evidence"
+  },
+  "smoke": {
+    "train": 6,
+    "test1": 3
+  },
+  "main": {
+    "checkpoints": [
+      0,
+      151,
+      302
+    ]
+  },
+  "dataset": {
+    "id": "TsinghuaC3I/MedXpertQA",
+    "revision": "7e7c465a68eb2b866926bfa59c8c9d17a8daba65",
+    "manifest_sha256": "2d0ddfc0919919d9e7ce3864cf96900ca505152bf633e474a0f245fb38c6e956"
+  }
+}

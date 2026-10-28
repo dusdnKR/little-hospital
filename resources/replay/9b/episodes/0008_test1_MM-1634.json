@@ -1,0 +1,152 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-1634",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 71-year-old male. I present to the emergency department with the sudden onset of sharp, pressure-like chest pain localized to the left side.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Does the pain radiate to your back, jaw, or arm?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 2,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Does the pain feel like it is tearing or ripping, and does it radiate to your back?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 3,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "Already provided; see earlier history.",
+        "query": "Did the pain start suddenly, and does it feel like pressure or squeezing?",
+        "selected_fact_ids": [
+          "OPENING"
+        ],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "repeated",
+        "type": "ask_patient",
+        "utterance": "I am a 71-year-old male. I present to the emergency department with the sudden onset of sharp, pressure-like chest pain localized to the left side."
+      },
+      {
+        "collection_actions": 4,
+        "format_repairs": 0,
+        "message": "You already asked this exact question; the answer will not change. Ask something different, request an examination, or finish.",
+        "patient_called": false,
+        "query": "Did the pain start suddenly, and does it feel like pressure or squeezing?",
+        "state_after": "collecting",
+        "status": "blocked_repeat",
+        "type": "ask_patient"
+      },
+      {
+        "collection_actions": 5,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Does the pain get worse with exertion or activity?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 6,
+        "facts": [
+          {
+            "id": "P002",
+            "text": "The pain began while I was sitting at home watching television and is accompanied by shortness of breath."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Do you have any shortness of breath, sweating, nausea, or dizziness along with the chest pain?",
+        "selected_fact_ids": [
+          "P002"
+        ],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "ask_patient",
+        "utterance": "The pain began while I was sitting at home watching television and is accompanied by shortness of breath."
+      },
+      {
+        "collection_actions": 7,
+        "exams": [
+          {
+            "id": "ecg",
+            "images": [
+              "MM-1634-a.jpeg"
+            ],
+            "text": "An ECG is performed and reveals the following findings:"
+          }
+        ],
+        "format_repairs": 0,
+        "query": "12-lead ECG",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "ecg"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_requests": []
+      },
+      {
+        "collection_actions": 7,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient presents with sudden chest pain and shortness of breath. The ECG in image MM-1634-a.jpeg shows significant ST-segment elevation in leads V1 through V4, which typically suggests an anterior myocardial infarction. However, the provided notes explicitly state that ST elevation in the presence of a left bundle branch block is a false positive for STEMI. Given the patient's age and the specific note linking these findings to a pulmonary embolism, the ECG changes are likely secondary to right heart strain rather than primary coronary ischemia. Therefore, the clinical picture and the specific warning in the notes support a diagnosis of acute pulmonary embolism over myocardial infarction.\n\nE",
+    "result": {
+      "collection_actions": 7,
+      "id": "MM-1634",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "E",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Pulmonary arterial hypertension",
+      "B": "Cor pulmonale",
+      "C": "COPD exacerbation",
+      "D": "Acute myocardial infarction",
+      "E": "Acute pulmonary embolism"
+    }
+  },
+  "score": {
+    "correct": true,
+    "id": "MM-1634"
+  }
+}

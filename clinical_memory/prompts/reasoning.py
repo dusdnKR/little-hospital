@@ -1,0 +1,2 @@
+REASONING_WORDS = 80
+REASONING = f"You are the doctor about to choose the most likely diagnosis from the supplied options, using only the supplied clinical record and images. Before you choose, write your reasoning in at most {REASONING_WORDS} words: name the findings that matter most, including what each supplied image shows, and say which option they support and why the closest alternative fits less well. Information that was not provided is unknown, not normal. No additional information can be requested. Write plain text only, no JSON and no list."

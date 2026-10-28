@@ -1,0 +1,186 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-1760",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 69-year-old male farmer with poorly controlled type 2 diabetes mellitus and irritable bowel syndrome. I come for a routine check-up.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis of the scalp lesion at the follow-up visit.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [
+          {
+            "id": "P_FOLLOWUP",
+            "text": "I was instructed to monitor my blood glucose. Three months later, I returned because a wound on my scalp had not healed."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Does the scalp lesion appear to be a new growth or a change in an existing one? Is there any history of trauma, sun exposure, or insect bites to the area? Also, are there any other skin changes on the body, such as scaling, itching, or ulceration?",
+        "selected_fact_ids": [
+          "P_FOLLOWUP"
+        ],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "ask_patient",
+        "utterance": "I was instructed to monitor my blood glucose. Three months later, I returned because a wound on my scalp had not healed."
+      },
+      {
+        "case_image_attached": [
+          "source_image"
+        ],
+        "case_image_note": "An unlabeled image from the case file is attached to this examination request. It is not the result of the examination that was named.",
+        "collection_actions": 2,
+        "exams": [
+          {
+            "id": "physical_examination",
+            "images": [],
+            "text": "Initial examination reveals a scalp lesion (Figure A).\nThe current scalp examination reveals the finding shown in Figure B."
+          },
+          {
+            "id": "source_image",
+            "images": [
+              "MM-1760-a.jpeg",
+              "MM-1760-b.jpeg"
+            ],
+            "text": "Unlabeled image from the case file. The source does not state its modality or body site."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Perform a full physical examination of the scalp, including inspection for any other lesions, and a general physical exam of the rest of the body to assess for signs of diabetes mellitus (e.g., neuropathy, skin changes) and other systemic conditions.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "physical_examination",
+          "source_image"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "general physical exam of the rest of the body to assess for signs of diabetes mellitus (e.g., neuropathy, skin changes) and other systemic conditions"
+        ]
+      },
+      {
+        "collection_actions": 3,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Already provided; see earlier history.",
+        "query": "Perform a full physical examination of the scalp, including inspection for any other lesions, and a general physical exam of the rest of the body to assess for signs of diabetes mellitus (e.g., neuropathy, skin changes) and other systemic conditions.",
+        "repeated_exam_ids": [
+          "physical_examination"
+        ],
+        "requested_exam_ids": [
+          "physical_examination"
+        ],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "repeated",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "general physical exam of the rest of the body to assess for signs of diabetes mellitus (e.g., neuropathy, skin changes) and other systemic conditions"
+        ]
+      },
+      {
+        "collection_actions": 4,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Already provided; see earlier history.",
+        "query": "Perform a full physical examination of the scalp, including inspection for any other lesions, and a general physical exam of the rest of the body to assess for signs of diabetes mellitus (e.g., neuropathy, skin changes) and other systemic conditions.",
+        "repeated_exam_ids": [
+          "physical_examination"
+        ],
+        "requested_exam_ids": [
+          "physical_examination"
+        ],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "repeated",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "general physical exam of the rest of the body to assess for signs of diabetes mellitus (e.g., neuropathy, skin changes) and other systemic conditions"
+        ]
+      },
+      {
+        "collection_actions": 5,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Already provided; see earlier history.",
+        "query": "Perform a full physical examination of the scalp, including inspection for any other lesions, and a general physical exam of the rest of the body to assess for signs of diabetes mellitus (e.g., neuropathy, skin changes) and other systemic conditions.",
+        "repeated_exam_ids": [
+          "physical_examination"
+        ],
+        "requested_exam_ids": [
+          "physical_examination"
+        ],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "repeated",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "general physical exam of the rest of the body to assess for signs of diabetes mellitus (e.g., neuropathy, skin changes) and other systemic conditions"
+        ]
+      },
+      {
+        "collection_actions": 6,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Already provided; see earlier history.",
+        "query": "Perform a full physical examination of the scalp, including inspection for any other lesions, and a general physical exam of the rest of the body to assess for signs of diabetes mellitus (e.g., neuropathy, skin changes) and other systemic conditions.",
+        "repeated_exam_ids": [
+          "physical_examination"
+        ],
+        "requested_exam_ids": [
+          "physical_examination"
+        ],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "repeated",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "general physical exam of the rest of the body to assess for signs of diabetes mellitus (e.g., neuropathy, skin changes) and other systemic conditions"
+        ]
+      },
+      {
+        "collection_actions": 6,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The most likely diagnosis is Basal cell carcinoma. The images show a pearly, dome-shaped nodule with telangiectasias, which is the classic presentation of this option. The patient's history of diabetes and poor wound healing supports the clinical context for a slow-growing lesion that might be misdiagnosed as a simple wound, but the specific morphology points to BCC. Actinic keratosis is unlikely because the lesion is a distinct nodule rather than a flat, scaly patch, and seborrheic keratosis is ruled out by the lack of the characteristic warty appearance.",
+    "result": {
+      "collection_actions": 6,
+      "id": "MM-1760",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "A",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Squamous cell carcinoma",
+      "B": "Poor wound healing secondary to diabetes",
+      "C": "Basal cell carcinoma",
+      "D": "Melanoma",
+      "E": "Actinic keratosis"
+    }
+  },
+  "score": {
+    "correct": true,
+    "id": "MM-1760"
+  }
+}

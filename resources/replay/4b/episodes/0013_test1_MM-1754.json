@@ -1,0 +1,111 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-1754",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 69-year-old female. I present to the emergency department with a 2-week history of dizziness.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "format_repairs": 0,
+        "message": "I have already told you everything I know. I have nothing more to add.",
+        "patient_called": false,
+        "query": "Do you have any shortness of breath or fatigue?",
+        "state_after": "collecting",
+        "status": "exhausted",
+        "type": "ask_patient",
+        "utterance": "I have already told you everything I know. I have nothing more to add."
+      },
+      {
+        "case_image_attached": [
+          "source_image"
+        ],
+        "case_image_note": "An unlabeled image from the case file is attached to this examination request. It is not the result of the examination that was named.",
+        "collection_actions": 2,
+        "exams": [
+          {
+            "id": "source_image",
+            "images": [
+              "MM-1754-a.jpeg"
+            ],
+            "text": "Unlabeled image from the case file. The source does not state its modality or body site."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "vital signs and ECG",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "source_image"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "vital signs and ECG"
+        ]
+      },
+      {
+        "collection_actions": 3,
+        "exams": [
+          {
+            "id": "laboratory_tests",
+            "images": [],
+            "text": "Laboratory results show a hemoglobin level of 7.5 g/dL (reference range: 11.0–14.5), along with elevated total bilirubin and alkaline phosphatase levels."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "complete blood count (CBC) and basic metabolic panel (BMP)",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "laboratory_tests"
+        ],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "complete blood count (CBC) and basic metabolic panel (BMP)"
+        ]
+      },
+      {
+        "collection_actions": 3,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The image displays a cup containing dark, tarry, black material consistent with melena, indicating digested blood. The patient's history of dizziness and laboratory results showing severe anemia (hemoglobin 7.5 g/dL) strongly support an acute upper gastrointestinal bleed. While Dubin-Johnson syndrome involves liver issues, it does not cause melena or such profound anemia. Metastatic colon cancer is less likely given the absence of weight loss or specific imaging findings, and the immediate presentation points to the bleed itself.",
+    "result": {
+      "collection_actions": 3,
+      "id": "MM-1754",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "B",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Dubin-Johnson syndrome",
+      "B": "Upper gastrointestinal bleed",
+      "C": "Metastatic colon cancer",
+      "D": "Liver cirrhosis",
+      "E": "Heavy-metal toxicity"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-1754"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "dataset": "TsinghuaC3I/MedXpertQA",
+  "revision": "7e7c465a68eb2b866926bfa59c8c9d17a8daba65",
+  "license": "MIT",
+  "files": {
+    "README.md": "7deb132dc3745ad22c8e0c3726e7f40cd30675ba5b400e876b85b138fa40c25a",
+    "MM/dev.jsonl": "ef6c792f7af1a0e7045adde3b13965c0d14c73375164ced446ffb97ad02e5292",
+    "MM/test.jsonl": "7cd16dcec75b07e8c68b3356057a1aa2ed538956df7b98e12e989c53d716030a",
+    "images.zip": "ca5d539b9ee18861cc73cf1dc249916e3989de6810130ed68975b43809e25500"
+  }
+}

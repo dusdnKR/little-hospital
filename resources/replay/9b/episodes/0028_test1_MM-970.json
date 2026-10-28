@@ -1,0 +1,157 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-970",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 55-year-old female wheelchair user with multiple sclerosis. I present with a 3-day history of sharp, stabbing chest pain that worsens with coughing and blood-tinged sputum.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Does the pain radiate to your arm, jaw, or back, and do you have shortness of breath?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 2,
+        "facts": [
+          {
+            "id": "P003",
+            "text": "My medical history includes a 40 pack-year smoking history, and I currently takes ocrelizumab and dantrolene."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Do you have a history of heart disease, high blood pressure, diabetes, or do you smoke?",
+        "selected_fact_ids": [
+          "P003"
+        ],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "ask_patient",
+        "utterance": "My medical history includes a 40 pack-year smoking history, and I currently takes ocrelizumab and dantrolene."
+      },
+      {
+        "collection_actions": 3,
+        "format_repairs": 0,
+        "message": "You already asked this exact question; the answer will not change. Ask something different, request an examination, or finish.",
+        "patient_called": false,
+        "query": "Do you have a history of heart disease, high blood pressure, diabetes, or do you smoke?",
+        "state_after": "collecting",
+        "status": "blocked_repeat",
+        "type": "ask_patient"
+      },
+      {
+        "collection_actions": 4,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Not provided for the requested examination.",
+        "query": "12-lead ECG",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "12-lead ECG"
+        ]
+      },
+      {
+        "collection_actions": 5,
+        "exams": [
+          {
+            "id": "radiograph",
+            "images": [
+              "MM-970-a.jpeg"
+            ],
+            "text": "Source image for the requested examination."
+          }
+        ],
+        "format_repairs": 1,
+        "query": "Chest radiograph",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "radiograph"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_requests": []
+      },
+      {
+        "collection_actions": 6,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Have you had any recent travel, long periods of immobility, or surgery?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 7,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Do you have a fever, chills, or cough with phlegm?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 8,
+        "format_repairs": 0,
+        "message": "You already asked this exact question; the answer will not change. Ask something different, request an examination, or finish.",
+        "patient_called": false,
+        "query": "Do you have a fever, chills, or cough with phlegm?",
+        "state_after": "awaiting_final",
+        "status": "blocked_repeat",
+        "type": "ask_patient"
+      }
+    ],
+    "reasoning": "The patient is a 55-year-old female with a significant 40 pack-year smoking history, presenting with sharp, pleuritic chest pain and hemoptysis. The chest radiograph (MM-970-a.jpeg) reveals a distinct, rounded opacity in the right lower lung zone, consistent with a pulmonary mass. This finding, combined with the high-risk smoking history and symptoms of hemoptysis, strongly supports a diagnosis of malignancy. While the note for Pulmonary Embolism mentions pleuritic pain, it does not account for the visible mass or the hemoptysis. Therefore, the radiographic evidence of a mass makes Bronchogenic carcinoma the most likely diagnosis.\n\nA",
+    "result": {
+      "collection_actions": 8,
+      "id": "MM-970",
+      "stop_reason": "action_limit",
+      "submission": {
+        "answer": "A",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Bronchogenic carcinoma",
+      "B": "Pulmonary embolism",
+      "C": "Pulmonary edema",
+      "D": "Sarcoidosis",
+      "E": "Bacterial pneumonia"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-970"
+  }
+}

@@ -1,0 +1,8 @@
+INTRO = "You are the doctor reviewing your own completed training encounter to learn from it. The record holds what you saw: the opening statement, the name you gave the presentation at the start, each question and examination request you made with its response, the examination records and images you received, the reasoning you wrote and the diagnosis you submitted. "
+UNVERIFIED = "Nobody tells you whether that diagnosis was right; treat it as an unverified hypothesis, not as evidence that your approach worked. "
+SHEET = "answer_key is the answer sheet of this patient, shown to you only now that your diagnosis is submitted: the confirmed diagnosis, whether your diagnosis matched it, the history you did not hear and the examination records you did not receive, whose images follow the images you did receive. Compare it with what you did. "
+RULES = 'The lesson is for a different patient with the same main complaint, whose case file holds other records: name kinds of questions, examinations and findings, not the particulars of this patient. "Not provided" means the record is absent from this case file: it is not a normal result and not a refusal by the patient. Do not copy patient-specific ages, durations, measurements or identifiers, and do not write answer letters or an option list. Diagnostic concepts are allowed. '
+COLLECT = {
+    "self": "collect: which question to ask and which kind of examination to request first for such a patient, judged by which of your own requests returned a record and which returned nothing, ",
+    "key": "collect: what you should have asked and which kind of examination you should have requested first for such a patient, so that fewer requests return nothing, ",
+}

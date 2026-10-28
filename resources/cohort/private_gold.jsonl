@@ -1,0 +1,336 @@
+{"id": "MM-9", "options": {"A": "Recurrent breast cancer", "B": "Erythrasma", "C": "Cellulitis", "D": "Radiation dermatitis", "E": "Lymphedema"}, "label": "C"}
+{"id": "MM-14", "options": {"A": "Chagas heart disease", "B": "Viral myocarditis", "C": "Muscular dystrophy", "D": "Cardiac sarcoidosis", "E": "Alcohol use disorder"}, "label": "D"}
+{"id": "MM-26", "options": {"A": "Erythema infectiosum", "B": "Cutaneous larva migrans", "C": "Cold agglutinin disease", "D": "Cutis marmorata", "E": "Erythema ab igne"}, "label": "C"}
+{"id": "MM-31", "options": {"A": "Basilar artery thrombosis", "B": "Osmotic demyelination syndrome", "C": "Cobalamin deficiency", "D": "Vermian atrophy", "E": "Cerebral edema"}, "label": "B"}
+{"id": "MM-34", "options": {"A": "Spinal cord astrocytoma", "B": "Multiple sclerosis", "C": "Spinal cord infarction", "D": "Acute disseminated encephalomyelitis (ADEM)", "E": "Transverse myelitis"}, "label": "C"}
+{"id": "MM-38", "options": {"A": "Nonsteroidal antiinflammatory drugs (NSAIDs)", "B": "Infiltration of kidney by malignant cells", "C": "Hyperuricemia", "D": "Hypercalcemia", "E": "Light chain cast nephropathy"}, "label": "D"}
+{"id": "MM-40", "options": {"A": "Syphilitic chancre", "B": "Eosinophilic ulcer", "C": "Herpes simplex virus infection", "D": "Cytomegalovirus infection", "E": "Behcet’s disease"}, "label": "D"}
+{"id": "MM-45", "options": {"A": "Avascular necrosis of the hip", "B": "Hip dysplasia", "C": "Femoral head fracture", "D": "Open-book fracture", "E": "Straddle pelvic fracture"}, "label": "D"}
+{"id": "MM-48", "options": {"A": "Dermatofibroma", "B": "Erythema nodosum", "C": "Disseminated Bacillus Calmette Guerin (BCG) disease", "D": "Leukemia cutis", "E": "Fusariosis"}, "label": "E"}
+{"id": "MM-65", "options": {"A": "Hemochromatosis", "B": "Central nervous system lymphoma", "C": "Craniopharyngioma", "D": "Nonfunctioning pituitary macroadenoma", "E": "Neurosarcoidosis"}, "label": "C"}
+{"id": "MM-70", "options": {"A": "Myocardial infarction", "B": "Restrictive cardiomyopathy", "C": "Cardiac tamponade", "D": "Pulmonary embolism", "E": "Constrictive pericarditis"}, "label": "E"}
+{"id": "MM-71", "options": {"A": "Scrofula", "B": "Tinea corporis", "C": "Granuloma annulare", "D": "Pityriasis rosea", "E": "Leprosy"}, "label": "E"}
+{"id": "MM-85", "options": {"A": "Mobitz type I second-degree AV block", "B": "Sick sinus syndrome", "C": "Mobitz type II second-degree AV block", "D": "Third-degree AV block", "E": "Sinus bradycardia"}, "label": "A"}
+{"id": "MM-94", "options": {"A": "intradural tumor", "B": "facet synovial cyst", "C": "far lateral disk herniation", "D": "hypertrophic ligamentum flavum", "E": "paracental disk herniation"}, "label": "B"}
+{"id": "MM-96", "options": {"A": "Atrioventricular nodal reentrant tachycardia", "B": "Multifocal atrial tachycardia", "C": "Atrial fibrillation with variable block", "D": "Atrial flutter", "E": "Orthodromic atrioventricular reentrant tachycardia"}, "label": "D"}
+{"id": "MM-98", "options": {"A": "CREST syndrome", "B": "Pyoderma gangrenosum", "C": "Anti-MDA5 dermatomyositis", "D": "Cutaneous polyarteritis nodosa", "E": "Behcet’s disease"}, "label": "C"}
+{"id": "MM-101", "options": {"A": "Wolff Parkinson White syndrome", "B": "Hypertrophic obstructive cardiomyopathy", "C": "QT prolongation", "D": "Arrhythmogenic right ventricular dysplasia", "E": "Brugada syndrome"}, "label": "D"}
+{"id": "MM-106", "options": {"A": "Osteosarcoma", "B": "Metastatic carcinoma", "C": "Osteonecrosis", "D": "Bone infarct", "E": "Enchondroma"}, "label": "D"}
+{"id": "MM-113", "options": {"A": "Retropharyngeal abscess", "B": "Foreign body aspiration", "C": "Epiglottitis", "D": "Head and neck squamous cell carcinoma", "E": "Peritonsillar abscess"}, "label": "A"}
+{"id": "MM-114", "options": {"A": "Diffuse mesenteric hydatid cyst disease", "B": "Food bolus obstruction", "C": "Pneumatosis cystoides intestinalis", "D": "Intestinal lipomatosis", "E": "Senile ileus"}, "label": "D"}
+{"id": "MM-126", "options": {"A": "Tinea capitis", "B": "Diabetes mellitus", "C": "Gastric cancer", "D": "Metformin", "E": "Sarcoidosis"}, "label": "C"}
+{"id": "MM-128", "options": {"A": "Colonic carcinoma", "B": "Acute pancreatitis", "C": "Mesenteric ischemia", "D": "Pneumoperitoneum", "E": "Colonic volvulus"}, "label": "D"}
+{"id": "MM-133", "options": {"A": "Giant-cell myocarditis", "B": "Cardiac sarcoidosis", "C": "Cardiac amyloidosis", "D": "Arrhythmogenic right ventricular dysplasia", "E": "Ischemic cardiomyopathy"}, "label": "B"}
+{"id": "MM-138", "options": {"A": "Desquamative Interstitial Pneumonia (DIP)", "B": "Usual Interstitial Pneumonia (UIP)", "C": "Nonspecific Interstitial Pneumonia (NSIP)", "D": "Respiratory Bronchiolitis-associated Interstitial Lung Disease (RB-ILD)", "E": "Lymphocytic Interstitial Pneumonia (LIP)"}, "label": "A"}
+{"id": "MM-139", "options": {"A": "Erysipelas", "B": "Peripheral microembolization", "C": "Arterial insufficiency", "D": "Angioneurotic edema", "E": "Phlegmasia cerulea dolens"}, "label": "C"}
+{"id": "MM-160", "options": {"A": "Left atrial appendage thrombus", "B": "Pulmonary embolism", "C": "Pulmonary vein thrombosis", "D": "Pulmonary artery pseudoaneurysm", "E": "Atrioesophageal fistula"}, "label": "C"}
+{"id": "MM-167", "options": {"A": "Plantar wart", "B": "Cat scratch disease", "C": "Syphilis", "D": "Malignant melanoma", "E": "Pyogenic granuloma"}, "label": "D"}
+{"id": "MM-171", "options": {"A": "Ruptured hydatid cyst", "B": "Pyogenic liver abscess", "C": "Acute hepatic necrosis", "D": "Cholecystoduodenal fistula", "E": "Emphysematous hepatitis"}, "label": "E"}
+{"id": "MM-181", "options": {"A": "Ophthalmomyiasis", "B": "Bacterial conjunctivitis", "C": "Superficial punctate keratitis", "D": "Allergic conjunctivitis", "E": "Anterior uveitis"}, "label": "A"}
+{"id": "MM-186", "options": {"A": "Pseudomembranous", "B": "Ischemic", "C": "Lymphocytic", "D": "Ulcerative", "E": "Collagenous"}, "label": "E"}
+{"id": "MM-201", "options": {"A": "Congenital calcaneonavicular coalition", "B": "Calcaneovalgus foot", "C": "Congenital talipes equinovarus", "D": "Congenital oblique talus", "E": "Congenital vertical talus"}, "label": "C"}
+{"id": "MM-207", "options": {"A": "Eosinophilic fasciitis", "B": "Scleredema", "C": "Myxedema", "D": "Scleromyxedema", "E": "Scleroderma"}, "label": "A"}
+{"id": "MM-208", "options": {"A": "Left circumflex (LCx) artery occlusion", "B": "Left main coronary artery occlusion", "C": "Coronary vasospasm", "D": "Left anterior descending (LAD) artery occlusion", "E": "Right main coronary artery occlusion"}, "label": "E"}
+{"id": "MM-213", "options": {"A": "Vitreous hemorrhage", "B": "Retinal detachment", "C": "Multiple sclerosis", "D": "Transient ischemic attack", "E": "Temporal arteritis"}, "label": "A"}
+{"id": "MM-221", "options": {"A": "Gingival melanoma", "B": "Amalgam tattoo", "C": "Oral melanoacanthoma", "D": "Kaposi’s sarcoma", "E": "Physiologic pigmentation"}, "label": "A"}
+{"id": "MM-223", "options": {"A": "Ventricular-paced rhythm", "B": "Atrial fibrillation", "C": "Second degree heart block", "D": "Wandering atrial pacemaker", "E": "Complete heart block"}, "label": "E"}
+{"id": "MM-228", "options": {"A": "Small cell lung cancer", "B": "Lung adenocarcinoma", "C": "Pulmonary metastases", "D": "Squamous cell lung carcinoma", "E": "Pleural mesothelioma"}, "label": "C"}
+{"id": "MM-229", "options": {"A": "Actinic keratosis", "B": "Xerosis", "C": "Basal cell carcinoma", "D": "Melanoma", "E": "Squamous cell carcinoma"}, "label": "E"}
+{"id": "MM-235", "options": {"A": "Thiamine deficiency", "B": "Alcohol withdrawal", "C": "Iron deficiency", "D": "Folate deficiency", "E": "Vitamin B12 deficiency"}, "label": "D"}
+{"id": "MM-243", "options": {"A": "Radiation dermatitis", "B": "Thrombotic vasculopathy", "C": "Pemphigus", "D": "Frostbite", "E": "Chemical burn"}, "label": "B"}
+{"id": "MM-245", "options": {"A": "Tetralogy of Fallot", "B": "Truncus arteriosus", "C": "Ventricular septal defect", "D": "Interrupted aortic arch", "E": "Hypoplastic left-heart syndrome"}, "label": "B"}
+{"id": "MM-256", "options": {"A": "Chronic osteomyelitis", "B": "Fibrous dysplasia", "C": "Adamantinoma", "D": "Periosteal osteosarcoma", "E": "Osteofibrous dysplasia"}, "label": "C"}
+{"id": "MM-263", "options": {"A": "Tuberculoid leprosy", "B": "Disseminated granuloma annulare", "C": "Syphilis", "D": "Tinea corporis", "E": "Erythema annulare centrifugum"}, "label": "C"}
+{"id": "MM-265", "options": {"A": "Bronchogenic cancer", "B": "Pneumonia", "C": "Tuberculosis", "D": "Mediastinal lymphoma", "E": "Pleural effusion"}, "label": "A"}
+{"id": "MM-270", "options": {"A": "Enchondroma", "B": "Chondromyxoid fibroma", "C": "Chondrosarcoma", "D": "Nonossifying fibroma", "E": "Osteosarcoma"}, "label": "B"}
+{"id": "MM-283", "options": {"A": "Cecal volvulus", "B": "Mesenteric ischemia", "C": "Ovarian cancer", "D": "Obturator hernia", "E": "Intussusception"}, "label": "D"}
+{"id": "MM-289", "options": {"A": "Meningioma", "B": "Brain metastasis", "C": "Intracranial abscess", "D": "Primary lymphoma", "E": "Glioma"}, "label": "A"}
+{"id": "MM-291", "options": {"A": "Systemic lupus erythematosis", "B": "Arteriovenous malformation", "C": "Thromboemboli", "D": "Hypothenar hammer syndrome", "E": "Raynaud's phenomenon"}, "label": "C"}
+{"id": "MM-302", "options": {"A": "Constipation", "B": "Small bowel obstruction", "C": "Ogilvie’s Syndrome (acute colonic pseudo-obstruction)", "D": "Cecal volvulus", "E": "Hiatal hernia"}, "label": "D"}
+{"id": "MM-303", "options": {"A": "Retinal toxoplasmosis", "B": "Susac\"s syndrome", "C": "Lupus retinal vasculitis", "D": "Hydroxychloroquine-induced maculopathy", "E": "Antiphospholipid syndrome"}, "label": "E"}
+{"id": "MM-310", "options": {"A": "Extraintestinal Crohn’s disease", "B": "Condylomata lata", "C": "Mpox", "D": "Herpes vegetans", "E": "Condylomata acuminata"}, "label": "B"}
+{"id": "MM-313", "options": {"A": "Pneumonia", "B": "Endometritis", "C": "Thrombophlebitis", "D": "Urinary tract infection", "E": "Surgical site infection"}, "label": "B"}
+{"id": "MM-317", "options": {"A": "Central retinal-artery occlusion", "B": "Macular degeneration", "C": "Arteritic ischemic optic neuropathy", "D": "Central retinal-vein occlusion", "E": "Severe diabetic retinopathy"}, "label": "D"}
+{"id": "MM-319", "options": {"A": "Both column", "B": "Transverse with posterior wall", "C": "Anterior column posterior hemitransverse", "D": "Anterior column", "E": "Transverse"}, "label": "A"}
+{"id": "MM-325", "options": {"A": "Bronchocentric granulomatosis", "B": "Mucoepidermoid carcinoma", "C": "Amyloidosis", "D": "Tracheobronchopathia osteochondroplastica", "E": "Adherent mucus"}, "label": "C"}
+{"id": "MM-330", "options": {"A": "Urethral rupture", "B": "Traumatic epididymitis", "C": "Penile contusion", "D": "Zipper injury", "E": "Penile fracture"}, "label": "E"}
+{"id": "MM-333", "options": {"A": "Septic emboli", "B": "Hereditary disorder", "C": "Neisseria meningitidis", "D": "Allergic medication reaction", "E": "Superficial vein thrombosis"}, "label": "B"}
+{"id": "MM-335", "options": {"A": "Ureteral transection", "B": "Bladder contusion", "C": "Intraperitoneal bladder rupture", "D": "Traumatic colovesical fistula", "E": "Extraperitoneal bladder rupture"}, "label": "C"}
+{"id": "MM-337", "options": {"A": "Nonossifying fibroma", "B": "Osteofibrous dysplasia", "C": "Osteoblastoma", "D": "Ewing's sarcoma", "E": "Chondroblastoma"}, "label": "B"}
+{"id": "MM-341", "options": {"A": "Pulmonary embolism", "B": "Stenosis of the left anterior descending artery", "C": "Pericardial effusion", "D": "Anxiety", "E": "Myocarditis"}, "label": "B"}
+{"id": "MM-343", "options": {"A": "Palmoplantar keratoderma", "B": "Acromegaly", "C": "Palmarpsoriasis", "D": "Tinea manuum", "E": "Tripe palms"}, "label": "E"}
+{"id": "MM-344", "options": {"A": "Vasculitis", "B": "Arterial embolization", "C": "Arterial vasospasm", "D": "Plaque disruption", "E": "Autoimmune collagen vascular disease"}, "label": "A"}
+{"id": "MM-345", "options": {"A": "Supernumerary rib", "B": "Rib metastases", "C": "Sternocostal anomaly", "D": "Absent rib", "E": "Inferior rib notching"}, "label": "A"}
+{"id": "MM-346", "options": {"A": "Non-ST elevation MI", "B": "Hyperkalemia", "C": "ST elevation MI", "D": "Pericarditis", "E": "Pericardial effusion"}, "label": "E"}
+{"id": "MM-360", "options": {"A": "Miliary tuberculosis", "B": "Eosinophilic granulomatosis with polyangiitis", "C": "Chondroblastic osteosarcoma", "D": "Pulmonary sarcoidosis", "E": "Pulmonary embolism"}, "label": "C"}
+{"id": "MM-364", "options": {"A": "Aortic pseudoaneurysm", "B": "Penetrating atherosclerotic ulcer", "C": "Aortic intramural hematoma", "D": "Stanford Type B aortic dissection", "E": "Stanford Type A aortic dissection"}, "label": "C"}
+{"id": "MM-372", "options": {"A": "ABO-associated hemolysis", "B": "Maternal blood loss", "C": "Elevated adenosine deaminase levels in red blood cells", "D": "Rh incompatibility", "E": "Water soluble vitamin deficiency"}, "label": "C"}
+{"id": "MM-374", "options": {"A": "Unicameral bone cyst", "B": "Eosinophilic granuloma", "C": "Aneurysmal bone cyst", "D": "Osteofibrous dysplasia", "E": "Fibrous dysplasia"}, "label": "A"}
+{"id": "MM-380", "options": {"A": "Bullous impetigo", "B": "Dermatitis herpetiformis", "C": "Linear IgA bullous dermatosis", "D": "Fixed drug eruption", "E": "Cutaneous bullous lupus"}, "label": "C"}
+{"id": "MM-398", "options": {"A": "Aquagenic keratoderma", "B": "Ochronosis", "C": "Leprosy", "D": "Acquired acral mycosis", "E": "Dyshidrotic eczema"}, "label": "A"}
+{"id": "MM-412", "options": {"A": "Cystic fibrosis", "B": "Sickle cell disease", "C": "Marfan syndrome", "D": "Tay-Sachs disease", "E": "Von Hippel-Lindau disease"}, "label": "E"}
+{"id": "MM-417", "options": {"A": "Asbestosis", "B": "Progressive massive fibrosis", "C": "Silicosis", "D": "Bird fancier's lung", "E": "Berylliosis"}, "label": "C"}
+{"id": "MM-435", "options": {"A": "Epidermoid cyst", "B": "Myiasis", "C": "Tungiasis", "D": "Cutaneous leishmaniasis", "E": "Furunculosis"}, "label": "B"}
+{"id": "MM-437", "options": {"A": "Arteriovenous malformation", "B": "Cherry hemangioma", "C": "Pyogenic granuloma", "D": "Malignant melanoma", "E": "Strawberry hemangioma"}, "label": "C"}
+{"id": "MM-440", "options": {"A": "Benign seborrheic keratosis", "B": "Melanoma", "C": "Benign nevus", "D": "Visceral malignancy", "E": "Actinic keratosis"}, "label": "A"}
+{"id": "MM-447", "options": {"A": "Esophageal tumor", "B": "Vein-graft aneurysms", "C": "Hemangioma", "D": "Liposarcoma", "E": "Thymoma"}, "label": "B"}
+{"id": "MM-449", "options": {"A": "Pellagra", "B": "Pernicious anemia", "C": "Sjogrens syndrome", "D": "Amyloidosis", "E": "Amyotrophic lateral sclerosis"}, "label": "E"}
+{"id": "MM-457", "options": {"A": "Osteosarcoma", "B": "Multiple myeloma", "C": "Primary lymphoma of bone", "D": "Chondrosarcoma", "E": "Metastatic carcinoma"}, "label": "E"}
+{"id": "MM-463", "options": {"A": "Tuberculosis", "B": "Hypogammaglobulinemia", "C": "Colon cancer", "D": "Osteosarcoma", "E": "Hypophosphatasia"}, "label": "C"}
+{"id": "MM-468", "options": {"A": "Langerhans\"-cell histiocytosis", "B": "Metastatic prostate cancer", "C": "Vitamin D excess", "D": "Paget\"s disease of bone", "E": "Scurvy"}, "label": "A"}
+{"id": "MM-469", "options": {"A": "Dysplastic nevus", "B": "Actinic keratosis", "C": "Basal cell carcinoma", "D": "Squamous cell carcinoma", "E": "Seborrheic keratosis"}, "label": "B"}
+{"id": "MM-470", "options": {"A": "Asherman syndrome", "B": "Oligozoospermia", "C": "Bicornuate uterus", "D": "Septate uterus", "E": "Primary ovarian insufficiency"}, "label": "B"}
+{"id": "MM-471", "options": {"A": "Basal cell carcinoma", "B": "Keratoacanthoma", "C": "Molluscum contagiosum", "D": "Verruca vulgaris", "E": "Pyogenic granuloma"}, "label": "B"}
+{"id": "MM-477", "options": {"A": "Cystic fibrosis", "B": "Primary ciliary dyskinesia", "C": "Common variable immunodeficiency", "D": "Chronic granulomatous disease", "E": "Chronic aspiration"}, "label": "B"}
+{"id": "MM-486", "options": {"A": "Re-expansion pulmonary edema", "B": "Primary spontaneous pneumothorax", "C": "Pulmonary contusion", "D": "Tension pneumothorax", "E": "Traumatic pneumothorax"}, "label": "E"}
+{"id": "MM-489", "options": {"A": "Chronic injury", "B": "Neoplasm", "C": "Acute trauma", "D": "Osteomyelitis", "E": "Biphosphonate therapy"}, "label": "B"}
+{"id": "MM-492", "options": {"A": "Primary biliary cholangitis", "B": "Primary sclerosing cholangitis", "C": "Hepatocellular carcinoma", "D": "Cholangiocarcinoma", "E": "Choledocholithiasis"}, "label": "D"}
+{"id": "MM-496", "options": {"A": "Ludwig angina", "B": "Mediastinitis", "C": "Pulmonary embolism", "D": "Esophageal rupture", "E": "Myocardial infarction"}, "label": "B"}
+{"id": "MM-505", "options": {"A": "Tarsal tunnel syndrome", "B": "Anterior process fracture calcaneus", "C": "Os calcaneus secundarius", "D": "Fibrous calcaneonavicular coalition", "E": "Accessory navicular"}, "label": "B"}
+{"id": "MM-509", "options": {"A": "Opioid use", "B": "Rib fracture", "C": "Diabetic ketoacidosis", "D": "Congestive heart failure", "E": "Chronic obstructive pulmonary disease"}, "label": "D"}
+{"id": "MM-514", "options": {"A": "Median nerve compression", "B": "Gout flare", "C": "Coronary angiography", "D": "Rheumatoid arthritis", "E": "Bullous pemphigoid"}, "label": "C"}
+{"id": "MM-521", "options": {"A": "First-degree atrioventricular (AV) block", "B": "Third-degree AV block", "C": "EKG lead malfunction", "D": "Second-degree AV block", "E": "Atrial fibrillation"}, "label": "D"}
+{"id": "MM-527", "options": {"A": "Plantar warts", "B": "Helomata", "C": "Seborrhoeic keratosis", "D": "Lichen planus", "E": "Calluses"}, "label": "A"}
+{"id": "MM-529", "options": {"A": "Acinic cell carcinoma", "B": "Adenoid cystic carcinoma", "C": "Mucoepidermoid carcinoma", "D": "Lymphoma", "E": "Small cell carcinoma"}, "label": "C"}
+{"id": "MM-530", "options": {"A": "Adrenal infarction", "B": "Tuberculosis", "C": "Hematoma", "D": "Hyperplasia", "E": "Abscess"}, "label": "C"}
+{"id": "MM-533", "options": {"A": "Squamous cell carcinoma in situ of the cervix", "B": "Invasive squamous cell carcinoma of the cervix", "C": "Bacterial infection of the cervix", "D": "Adenocarcinoma in situ of the cervix", "E": "Invasive adenocarcinoma of the cervix"}, "label": "E"}
+{"id": "MM-543", "options": {"A": "Polycystic ovarian syndrome", "B": "Prophyria cutanea tarda", "C": "Acromegaly", "D": "Paraneoplastic disorder", "E": "Cushing\"s syndrome"}, "label": "D"}
+{"id": "MM-545", "options": {"A": "Periorbital cellulitis", "B": "Dacryocystitis", "C": "Chalazion", "D": "Orbital cellulitis", "E": "Hordeolum"}, "label": "B"}
+{"id": "MM-550", "options": {"A": "Syphilis", "B": "Discoid lupus", "C": "Acne", "D": "Impetigo", "E": "Mastocytosis"}, "label": "A"}
+{"id": "MM-559", "options": {"A": "Uncal herniation", "B": "Carotid dissection", "C": "Skull fracture", "D": "Infratentorial hemorrhage", "E": "Intraorbital foreign body"}, "label": "C"}
+{"id": "MM-563", "options": {"A": "Non–small-cell lung cancer", "B": "Histoplasmosis", "C": "Septic embolization", "D": "Sarcoidosis", "E": "Langerhans cell histiocytosis"}, "label": "A"}
+{"id": "MM-575", "options": {"A": "Takayasu’s arteritis", "B": "Microscopic polyangiitis", "C": "Abdominal aortic aneurysm", "D": "Aortic dissection", "E": "Classical polyarteritis nodosa"}, "label": "A"}
+{"id": "MM-577", "options": {"A": "Lipoma", "B": "Schwannoma", "C": "Liposarcoma", "D": "Malignant peripheral nerve sheath tumor", "E": "Giant cell tumor of tendon sheath"}, "label": "D"}
+{"id": "MM-580", "options": {"A": "Hereditary spherocytosis", "B": "Sickle cell trait", "C": "Human immunodeficiency virus (HIV) infection", "D": "Vitamin D deficiency", "E": "Beta-thalassemia minor"}, "label": "A"}
+{"id": "MM-581", "options": {"A": "Staphylococcal scalded skin", "B": "Herpes simplex infection", "C": "Kawasaki disease", "D": "Stevens-Johnson syndrome", "E": "Bullous pemphigoid"}, "label": "A"}
+{"id": "MM-584", "options": {"A": "Superior labrum anterior posterior (SLAP) tear", "B": "Humeral avulsion of the glenohumeral ligament (HAGL)", "C": "Supraspinatus partial articular sided tendon avulsion (PASTA)", "D": "Anterior labral periosteal sleeve avulsion (ALPSA)", "E": "Engaging (>25%) Hill Sachs defect"}, "label": "B"}
+{"id": "MM-591", "options": {"A": "Gastric bezoar", "B": "Peptic ulcer disease", "C": "Pyloric stenosis", "D": "Gastric polyp", "E": "Gastric cancer"}, "label": "E"}
+{"id": "MM-597", "options": {"A": "Trisomy 13", "B": "Trisomy 21", "C": "Turner syndrome", "D": "Trisomy 18", "E": "22q11.2 deletion syndrome"}, "label": "D"}
+{"id": "MM-599", "options": {"A": "Odontoid fracture", "B": "Spondylolisthesis of C2", "C": "Avulsion fracture of C3 spinous process", "D": "Vertebral body compression fracture of C2", "E": "Burst fracture of C1"}, "label": "B"}
+{"id": "MM-601", "options": {"A": "Alcohol use", "B": "Selective serotonin reuptake inhibitor (SSRI) use", "C": "Obesity", "D": "Congestive heart failure (CHF)", "E": "Central sleep apnea"}, "label": "C"}
+{"id": "MM-613", "options": {"A": "Staphylococcus aureus infection", "B": "Squamous cell carcinoma", "C": "Sporotrichosis", "D": "Human herpesvirus 8 infection", "E": "Atypical mycobacterial infection"}, "label": "A"}
+{"id": "MM-616", "options": {"A": "Osteomyelitis", "B": "Langerhans cell histiocytosis", "C": "Bone infarct", "D": "Osteochondritis dissecans", "E": "Ewing sarcoma"}, "label": "A"}
+{"id": "MM-618", "options": {"A": "Chondrosarcoma", "B": "Vascular claudication", "C": "Enchondroma", "D": "Lumbar Disc Herniation", "E": "Spinal stenosis"}, "label": "B"}
+{"id": "MM-627", "options": {"A": "Pancreatic pseudocyst", "B": "Intestinal malrotation", "C": "Crohn\"s disease", "D": "Enteric duplication cyst", "E": "Wilms\" tumor"}, "label": "D"}
+{"id": "MM-643", "options": {"A": "Psoriasis", "B": "Scleredema of diabetes", "C": "Tinea versicolor", "D": "Hemochromatosis", "E": "Necrolytic migratory erythema"}, "label": "E"}
+{"id": "MM-645", "options": {"A": "Lymphangitis", "B": "Mycosis fungoides", "C": "Erythema ab igne", "D": "Livedo reticularis", "E": "Acanthosis nigricans"}, "label": "C"}
+{"id": "MM-646", "options": {"A": "Pectoralis major rupture", "B": "SLAP lesion", "C": "Tendonitis of the long head of the biceps", "D": "Posterior labral tear", "E": "Supraspinatus partial thickness tear"}, "label": "D"}
+{"id": "MM-647", "options": {"A": "Hernia", "B": "Intraabdominal cancer", "C": "Endometrioma", "D": "Urachal duct cyst", "E": "Keloid"}, "label": "B"}
+{"id": "MM-649", "options": {"A": "Salter-Harris fracture", "B": "Torus fracture", "C": "Greenstick fracture", "D": "Smith fracture", "E": "Colles fracture"}, "label": "B"}
+{"id": "MM-651", "options": {"A": "First-degree heart block", "B": "Sarcoidosis", "C": "Hypothyroidism", "D": "Ischemic heart disease", "E": "Lyme disease"}, "label": "B"}
+{"id": "MM-652", "options": {"A": "Ascaris lumbricoides", "B": "Ancylostoma duodenale", "C": "Necator americanus", "D": "Enterobius vermicularis", "E": "Trichuris trichiura"}, "label": "D"}
+{"id": "MM-657", "options": {"A": "Parosteal osteosarcoma", "B": "Synovial Sarcoma", "C": "Periosteal osteosarcoma", "D": "Osteochondroma", "E": "Dedifferentiated chondrosarcoma"}, "label": "C"}
+{"id": "MM-660", "options": {"A": "Cryptococcus neoformans infection", "B": "Miliary tuberculosis", "C": "Nocardia asteroides infection", "D": "Cerebral toxoplasmosis", "E": "Listeria moncytogenes infection"}, "label": "C"}
+{"id": "MM-662", "options": {"A": "C", "B": "D", "C": "B", "D": "A", "E": "E"}, "label": "D"}
+{"id": "MM-675", "options": {"A": "Small cell carcinoma of the lung", "B": "Chronic obstructive pulmonary disease", "C": "Unstable angina", "D": "Poorly treated asthma", "E": "Interstitial lung disease"}, "label": "E"}
+{"id": "MM-683", "options": {"A": "Temporal arteritis", "B": "Glaucoma", "C": "Retinitis pigmentosa", "D": "Marfan’s syndrome", "E": "Graves’ ophthalmopathy"}, "label": "D"}
+{"id": "MM-686", "options": {"A": "Antrochoanal polyp", "B": "Tonsillar abscess", "C": "Palatine tonsillitis", "D": "Pharyngeal lymphoma", "E": "Foreign body"}, "label": "A"}
+{"id": "MM-694", "options": {"A": "Vertebral fractures", "B": "Diaphragmatic rupture", "C": "Aortic dissection", "D": "Cardiac rupture", "E": "Pneumothorax"}, "label": "E"}
+{"id": "MM-698", "options": {"A": "Cherry angioma", "B": "Cystic hygroma", "C": "Infantile hemangioma", "D": "Cavernous hemangioma", "E": "Hematoma"}, "label": "D"}
+{"id": "MM-715", "options": {"A": "Rocky Mountain spotted fever", "B": "Ehrlichiosis", "C": "Babesiosis", "D": "Lyme disease", "E": "Tularemia"}, "label": "E"}
+{"id": "MM-736", "options": {"A": "Stress fracture", "B": "Chronic osteomyelitis", "C": "Osteosarcoma", "D": "Osteoid osteoma", "E": "Ewing sarcoma"}, "label": "E"}
+{"id": "MM-752", "options": {"A": "Lymphoma", "B": "Acute pulmonary embolism", "C": "Ascending aortic aneurysm", "D": "Hypertrophic cardiomyopathy", "E": "Coarctation of the aorta"}, "label": "C"}
+{"id": "MM-756", "options": {"A": "Aortic regurgitation", "B": "Mitral stenosis", "C": "Tricuspid regurgitation", "D": "Mitral regurgitation", "E": "Aortic stenosis"}, "label": "D"}
+{"id": "MM-759", "options": {"A": "Osteitis fibrosa", "B": "Osteosarcoma", "C": "Lipoma", "D": "Calcinosis", "E": "Fistula"}, "label": "D"}
+{"id": "MM-763", "options": {"A": "Atrial tachycardia", "B": "Multifocal atrial tachycardia", "C": "Atrioventricular nodal reentrant tachycardia", "D": "Atrioventricular reentrant tachycardia", "E": "Atrial flutter"}, "label": "D"}
+{"id": "MM-791", "options": {"A": "Treponema pallidum", "B": "Parvovirus B19", "C": "Measles", "D": "Gonococcus", "E": "Coxsackie A"}, "label": "A"}
+{"id": "MM-795", "options": {"A": "Pulmonary hypertension", "B": "Hypertrophic cardiomyopathy", "C": "Constrictive pericarditis", "D": "Restrictive cardiomyopathy", "E": "Tricuspid stenosis"}, "label": "C"}
+{"id": "MM-809", "options": {"A": "Marfan’s syndrome", "B": "Gaucher’s disease", "C": "Multiple endocrine neoplasia type 2B", "D": "Tuberous sclerosis", "E": "Familial hypercholesterolemia"}, "label": "C"}
+{"id": "MM-816", "options": {"A": "Disseminated herpes zoster", "B": "Atopic eruption of pregnancy", "C": "Pemphigoid gestationis", "D": "Secondary syphilis", "E": "Polymorphic eruption of pregnancy"}, "label": "B"}
+{"id": "MM-819", "options": {"A": "Simple breast cyst", "B": "Galactocele", "C": "Fat necrosis", "D": "Fibroadenoma", "E": "Lipoma"}, "label": "B"}
+{"id": "MM-822", "options": {"A": "Sagittal band rupture", "B": "Flexor digitorum superficialis avulsion", "C": "Central slip rupture", "D": "Flexor digitorum profundus avulsion", "E": "Distal extensor tendon rupture"}, "label": "D"}
+{"id": "MM-826", "options": {"A": "Metabolic alkalosis", "B": "Metabolic acidosis", "C": "Respiratory alkalosis", "D": "Respiratory acidosis", "E": "Mixed respiratory alkalosis and metabolic acidosis"}, "label": "B"}
+{"id": "MM-827", "options": {"A": "Cryptococcosis", "B": "Bullous impetigo", "C": "Verruca vulgaris", "D": "Bacillary angiomatosis", "E": "Kaposi\"s sarcoma"}, "label": "A"}
+{"id": "MM-828", "options": {"A": "Tracheoesophageal fistula", "B": "Jejunal atresia", "C": "Cystic fibrosis", "D": "Hirschsprung disease", "E": "Pyloric stenosis"}, "label": "C"}
+{"id": "MM-830", "options": {"A": "Stress fracture", "B": "Infection", "C": "Pes anserine bursitis", "D": "Component failure/ polyethylene failure", "E": "Complex regional pain syndrome"}, "label": "A"}
+{"id": "MM-848", "options": {"A": "Beta-cell destruction", "B": "Visceral malignancy", "C": "Poor hygiene", "D": "Insulin resistance", "E": "Niacin deficiency"}, "label": "D"}
+{"id": "MM-854", "options": {"A": "Chondroblastoma", "B": "UBC", "C": "Osteoid Osteoma", "D": "Giant Cell Tumor", "E": "Non-ossifying fibroma"}, "label": "A"}
+{"id": "MM-860", "options": {"A": "Edwards syndrome", "B": "Patau syndrome", "C": "Klinefelter syndrome", "D": "Turner syndrome", "E": "Down syndrome"}, "label": "B"}
+{"id": "MM-867", "options": {"A": "Pyloric stenosis", "B": "Hirschsprung disease", "C": "Meconium ileus", "D": "Duodenal atresia", "E": "Intestinal malrotation"}, "label": "B"}
+{"id": "MM-869", "options": {"A": "Iododerma", "B": "Reactive epidermal hyperplasia", "C": "Pyogenic granuloma", "D": "Eccrine poroma", "E": "Chromomycosis"}, "label": "A"}
+{"id": "MM-871", "options": {"A": "Umbilical hernia", "B": "Omphalith", "C": "Urachal cyst", "D": "Endometrioma", "E": "Metastatic adenocarcinoma"}, "label": "D"}
+{"id": "MM-881", "options": {"A": "Acute cholecystitis", "B": "Liver abscess", "C": "Appendicitis", "D": "Hepatitis B", "E": "Hepatocellular carcinoma"}, "label": "B"}
+{"id": "MM-885", "options": {"A": "Colloid cyst", "B": "Intraventricular meningioma", "C": "Thrombosed intracranial aneurysm", "D": "Choroid plexus metastases", "E": "Glioblastoma multiforme"}, "label": "C"}
+{"id": "MM-889", "options": {"A": "Hereditary angioedema", "B": "Sjogren\"s disease", "C": "Hematoma", "D": "Thromboembolism", "E": "Anti-neutrophil cytoplasm antibodies (ANCA) vasculitis"}, "label": "D"}
+{"id": "MM-900", "options": {"A": "Mumps", "B": "Bulemia nervosa", "C": "Serum sickness", "D": "Sjogren\"s syndrome", "E": "Uveoparotid fever"}, "label": "E"}
+{"id": "MM-902", "options": {"A": "Thyroid cancer", "B": "Lung cancer", "C": "Nasopharyngeal cancer", "D": "Melanoma", "E": "Gastric cancer"}, "label": "E"}
+{"id": "MM-906", "options": {"A": "Second degree heart block type II", "B": "Postural orthostatic tachycardia syndrome", "C": "Complete heart block", "D": "First-degree heart block", "E": "Second degree heart block type I"}, "label": "E"}
+{"id": "MM-911", "options": {"A": "Cholangitis", "B": "Cholelithiasis", "C": "Cholangiocarcinoma", "D": "Pancreatitis", "E": "Choledochal cyst"}, "label": "E"}
+{"id": "MM-914", "options": {"A": "Pancreatitis", "B": "Colonic diverticulitis", "C": "Ischemic colitis", "D": "Cirrhosis", "E": "Colonic adenocarcinoma"}, "label": "B"}
+{"id": "MM-919", "options": {"A": "Sinus bradycardia without heart block", "B": "Third-degree complete atrioventricular block", "C": "First-degree atrioventricular block", "D": "Second-degree atrioventricular block, Mobitz type 1", "E": "Second-degree atrioventricular block, Mobitz type 2"}, "label": "B"}
+{"id": "MM-936", "options": {"A": "Anomalous origin of the left coronary artery from the pulmonary artery", "B": "Kawasaki disease", "C": "Viral myocarditis", "D": "Tachycardia-induced cardiomyopathy", "E": "Ventricular septal defect"}, "label": "A"}
+{"id": "MM-938", "options": {"A": "Toxic epidermal necrolysis", "B": "Erythrodermic psoriasis", "C": "Seborrheic dermatitis", "D": "Pityriasis rubra pilaris", "E": "Erytherma multiforme"}, "label": "B"}
+{"id": "MM-940", "options": {"A": "Graves\" disease", "B": "Acromegaly", "C": "Somatostatinoma", "D": "Addison\"s disease", "E": "Diabetes mellitus"}, "label": "E"}
+{"id": "MM-941", "options": {"A": "Intestinal malrotation", "B": "Hypertrophic pyloric stenosis", "C": "Jejunal atresia", "D": "Annular pancreas", "E": "Duodenal atresia"}, "label": "D"}
+{"id": "MM-949", "options": {"A": "Hepatocellular carcinoma", "B": "Hepatic angiosarcoma", "C": "Gallbladder carcinoma", "D": "Ovarian cystadenocarcinoma", "E": "Pancreatic adenocarcinoma"}, "label": "C"}
+{"id": "MM-952", "options": {"A": "Sporotrichosis", "B": "Actinomycosis", "C": "Tularemia", "D": "Nonpulmonary tuberculosis", "E": "Cutaneous anthrax"}, "label": "B"}
+{"id": "MM-955", "options": {"A": "Paraovarian cyst torsion", "B": "Ovarian torsion", "C": "Broad ligament torsion", "D": "Fallopian tube torsion", "E": "Uterine torsion"}, "label": "D"}
+{"id": "MM-958", "options": {"A": "Atrial flutter", "B": "Multifocal atrial tachycardia", "C": "Atrial fibrillation with rapid ventricular response", "D": "Paroxysmal supraventricular tachycardia", "E": "Sinus tachycardia"}, "label": "A"}
+{"id": "MM-959", "options": {"A": "Babesiosis", "B": "Leptospirosis", "C": "Brucellosis", "D": "Tickborne relapsing fever", "E": "Rocky Mountain spotted fever"}, "label": "D"}
+{"id": "MM-960", "options": {"A": "Second degree Mobitz type I AV block", "B": "First degree AV block", "C": "Third degree (complete) AV block", "D": "Wolff-Parkinson-White syndrome", "E": "Second degree Mobitz type II AV block"}, "label": "C"}
+{"id": "MM-964", "options": {"A": "Ruptured angiomyolipoma", "B": "Renal abscess", "C": "Malignant fibrous histiocytoma", "D": "Transitional cell carcinoma", "E": "Pyelonephritis"}, "label": "B"}
+{"id": "MM-969", "options": {"A": "Croup", "B": "Epiglottitis", "C": "Retropharyngeal abscess", "D": "Vocal cord cyst", "E": "Peritonsillar abscess"}, "label": "C"}
+{"id": "MM-970", "options": {"A": "Bronchogenic carcinoma", "B": "Pulmonary embolism", "C": "Pulmonary edema", "D": "Sarcoidosis", "E": "Bacterial pneumonia"}, "label": "B"}
+{"id": "MM-973", "options": {"A": "Parsonage-Turner syndrome", "B": "Long thoracic neuritis", "C": "Quadrilateral space syndrome", "D": "Internal impingement", "E": "External impingement"}, "label": "C"}
+{"id": "MM-976", "options": {"A": "Candidiasis", "B": "Oral hairy leukoplakia", "C": "Oral lichen planus", "D": "Uremic stomatitis", "E": "Human papillomavirus infection"}, "label": "D"}
+{"id": "MM-981", "options": {"A": "Tachycardia-induced cardiomyopathy", "B": "Acute myocardial infarction", "C": "Acute allograft rejection", "D": "Cardiac allograft vasculopathy", "E": "Recrudescence of nonischemic cardiomyopathy"}, "label": "C"}
+{"id": "MM-1000", "options": {"A": "Skene duct cyst", "B": "Gartner duct cyst", "C": "Urethral diverticulum", "D": "Nabothian cyst", "E": "Bartholin gland cyst"}, "label": "B"}
+{"id": "MM-1011", "options": {"A": "Brown recluse spider bites", "B": "Polyarteritis nodosa vasculitis", "C": "Cutaneous anthrax", "D": "Ecthyma gangrenosum", "E": "Lymphoma"}, "label": "E"}
+{"id": "MM-1018", "options": {"A": "Cat scratch disease", "B": "Lymphogranuloma venereum", "C": "Hidradenitis suppurativa", "D": "Blastomycosis", "E": "Epidermal inclusion cyst"}, "label": "C"}
+{"id": "MM-1032", "options": {"A": "Lissencephaly", "B": "Anencephaly", "C": "Chiari I malformation", "D": "Dandy-Walker malformation", "E": "Chiari II malformation"}, "label": "D"}
+{"id": "MM-1036", "options": {"A": "Craniopharyngioma", "B": "Meningioma", "C": "Berry aneurysm", "D": "Rathke cleft cyst", "E": "Pituitary macroadenoma"}, "label": "A"}
+{"id": "MM-1049", "options": {"A": "Anteroinferior labral nonunion", "B": "Anteroinferior glenoid bone defect", "C": "Unrecognized humeral avulsion of the glenohumeral ligament (HAGL)", "D": "Engaging Hill Sachs defect", "E": "Untreated SLAP lesion"}, "label": "B"}
+{"id": "MM-1055", "options": {"A": "Sweet’s syndrome", "B": "Erythema multiforme", "C": "Secondary syphilis", "D": "Drug eruption", "E": "Granulomatosis with polyangitis"}, "label": "A"}
+{"id": "MM-1067", "options": {"A": "Cobalamin", "B": "Copper", "C": "Zinc", "D": "Thyroid hormone", "E": "Ascorbic acid"}, "label": "C"}
+{"id": "MM-1068", "options": {"A": "Chronic dilantin exposure", "B": "Cholesteatoma", "C": "Osteopetrosis", "D": "Paget disease", "E": "Otosclerosis"}, "label": "C"}
+{"id": "MM-1080", "options": {"A": "Non-ST elevation myocardial infarction (NSTEMI)", "B": "Left bundle branch block", "C": "Unstable angina", "D": "Right bundle branch block", "E": "ST-elevation myocardial infarction (STEMI)"}, "label": "B"}
+{"id": "MM-1081", "options": {"A": "Subdural hematoma", "B": "Caput succedaneum", "C": "Subarachnoid hemorrhage", "D": "Epidural hematoma", "E": "Subgaleal hematoma"}, "label": "A"}
+{"id": "MM-1083", "options": {"A": "Patent ductus arteriosus", "B": "Penetrating aortic ulcer", "C": "Aortic pseudoaneurysm", "D": "Ductus diverticulum", "E": "Traumatic aortic injury"}, "label": "A"}
+{"id": "MM-1086", "options": {"A": "Salter Harris type I fracture", "B": "Salter Harris type IV fracture", "C": "Salter Harris type V fracture", "D": "Salter Harris type II fracture", "E": "Salter Harris type III fracture"}, "label": "B"}
+{"id": "MM-1088", "options": {"A": "Anaphylaxis", "B": "Scombroid", "C": "Urticaria", "D": "Urticaria multiforme", "E": "Celiac disease"}, "label": "A"}
+{"id": "MM-1098", "options": {"A": "Pendred syndrome", "B": "Ectopic thyroid", "C": "Iodine deficiency", "D": "Thyroglossal duct cyst", "E": "Hashimoto thyroiditis"}, "label": "B"}
+{"id": "MM-1101", "options": {"A": "Acute myocardial infarction", "B": "Pulmonary embolism", "C": "Intermittent torsades des pointes", "D": "Previous myocardial ischemia", "E": "Hypokalemia"}, "label": "D"}
+{"id": "MM-1103", "options": {"A": "Interstitial pneumonia", "B": "Left ventricular failure", "C": "Idiopathic pulmonary fibrosis", "D": "Pulmonary emphysema", "E": "Acute respiratory distress syndrome"}, "label": "B"}
+{"id": "MM-1109", "options": {"A": "Scurvy", "B": "Acquired immunodeficiency syndrome", "C": "Leukemia", "D": "Pellagra", "E": "Sarcoidosis"}, "label": "C"}
+{"id": "MM-1117", "options": {"A": "Cervical intraepithelial neoplasia III", "B": "Cervical intraepithelial neoplasia II", "C": "Adenocarcinoma", "D": "Squamous cell carcinoma", "E": "Cervical intraepithelial neoplasia I"}, "label": "B"}
+{"id": "MM-1129", "options": {"A": "Paramyxovirus", "B": "Poxvirus", "C": "Human herpesvirus 8", "D": "Human herpesvirus 6", "E": "Parvovirus"}, "label": "B"}
+{"id": "MM-1130", "options": {"A": "Atrial flutter", "B": "Multifocal atrial tachycardia", "C": "Sinus tachycardia", "D": "Paroxysmal supraventricular tachycardia", "E": "Atrial fibrillation with rapid ventricular response"}, "label": "C"}
+{"id": "MM-1137", "options": {"A": "Restrictive", "B": "Non-compaction", "C": "Ischemic", "D": "Non-ischemic dilated", "E": "Hypertrophic"}, "label": "E"}
+{"id": "MM-1140", "options": {"A": "Malignancy", "B": "Psoriasis", "C": "Cutaneous sarcoidosis", "D": "Acute hepatitis C infection", "E": "Inflammatory bowel disease"}, "label": "A"}
+{"id": "MM-1146", "options": {"A": "Growth-hormone deficiency", "B": "Crohn disease", "C": "Celiac disease", "D": "Constitutional delay of growth and puberty", "E": "Hypothyroidism"}, "label": "D"}
+{"id": "MM-1154", "options": {"A": "Malrotation with midgut volvulus", "B": "Duodenal atresia", "C": "Hirschsprung disease", "D": "Pyloric stenosis", "E": "Jejunal atresia"}, "label": "E"}
+{"id": "MM-1155", "options": {"A": "Acromial stress fracture", "B": "Proximal humeral epiphysiolysis", "C": "Superior labral anterior and posterior (SLAP) tear", "D": "Partial articular-sided rotator cuff tear", "E": "Deltoid muscle strain"}, "label": "B"}
+{"id": "MM-1170", "options": {"A": "Stroke", "B": "Subdural hemorrhage", "C": "Meningitis", "D": "Encephalitis", "E": "Paget\"s disease"}, "label": "A"}
+{"id": "MM-1172", "options": {"A": "Syphilis", "B": "Amiodarone exposure", "C": "Diabetes mellitus", "D": "Vitamin B12 deficiency", "E": "Hyperlipidemia type III"}, "label": "C"}
+{"id": "MM-1177", "options": {"A": "Tinea versicolor", "B": "Pityriasis rosea", "C": "Vitiligo", "D": "Seborrheic dermatitis", "E": "Psoriasis"}, "label": "A"}
+{"id": "MM-1198", "options": {"A": "SLAP tear", "B": "Loose body", "C": "ALPSA", "D": "HAGL", "E": "Bankart"}, "label": "A"}
+{"id": "MM-1199", "options": {"A": "Chronic granulomatous disease", "B": "Brucellosis", "C": "Burkitt\"s lymphoma", "D": "Neurofibromatosis", "E": "Tuberculous lymphadenitis"}, "label": "A"}
+{"id": "MM-1206", "options": {"A": "Follicular thyroid carcinoma", "B": "Non-hodgkins lymphoma", "C": "Superior vena cava syndrome", "D": "Bleeding into a thyroid nodule", "E": "Scrofula"}, "label": "D"}
+{"id": "MM-1210", "options": {"A": "Angina", "B": "Pulmonary embolism", "C": "Myocardial infarction", "D": "Pneumonia", "E": "Unstable angina"}, "label": "C"}
+{"id": "MM-1213", "options": {"A": "Cutaneous malignant melanoma", "B": "Traumatic fat necrosis", "C": "Blue nevus", "D": "Invasive ductal carcinoma", "E": "Inflammatory mastitis"}, "label": "D"}
+{"id": "MM-1229", "options": {"A": "Intercostal muscle strain", "B": "Precordial catch syndrome", "C": "Costochondritis", "D": "Pulmonary embolism", "E": "Acute coronary syndrome"}, "label": "B"}
+{"id": "MM-1239", "options": {"A": "Necrolytic migratory erythema", "B": "Pigmented purpuric dermatosis", "C": "Necrobiosis lipoidica diabeticorum", "D": "Scleredema of diabetes", "E": "Bullous disease of diabetes"}, "label": "A"}
+{"id": "MM-1241", "options": {"A": "Aortic dissection", "B": "Exacerbation of chronic obstructive pulmonary disease", "C": "Acute pericarditis", "D": "Unstable angina", "E": "Pulmonary embolism"}, "label": "D"}
+{"id": "MM-1247", "options": {"A": "Lymphoma", "B": "Erdheim–Chester disease", "C": "Langerhans cell histiocytosis", "D": "Sarcoidosis", "E": "IgG4-related disease"}, "label": "B"}
+{"id": "MM-1252", "options": {"A": "Brucellosis", "B": "Cytomegalovirus infection", "C": "Hepatitis C virus infection", "D": "Perinephritic abscess", "E": "Acute lymphoblastic leukemia"}, "label": "A"}
+{"id": "MM-1255", "options": {"A": "Synovial sarcoma", "B": "Liposarcoma", "C": "Schwanoma", "D": "Desmoid Tumor", "E": "Undifferentiated Pleomorphic Sarcoma"}, "label": "E"}
+{"id": "MM-1260", "options": {"A": "Diabetic glomerulonephropathy", "B": "Membranous nephropathy", "C": "Light chain nephropathy", "D": "Amyloidosis", "E": "Focal segmental glomerulosclerosis"}, "label": "A"}
+{"id": "MM-1261", "options": {"A": "Pericarditis", "B": "Wellens syndrome", "C": "Posterior myocardial infarction", "D": "Anteroseptal ST-elevation myocardial infarction", "E": "Diffuse subendocardial ischemia"}, "label": "E"}
+{"id": "MM-1265", "options": {"A": "Androgenic alopecia", "B": "Trichotillomania", "C": "Central centrifugal cicatricial alopecia", "D": "Hypothyroidism", "E": "Syphilitic alopecia"}, "label": "E"}
+{"id": "MM-1297", "options": {"A": "Transient ischemic attack", "B": "Todd paralysis", "C": "Migraine", "D": "Ischemic stroke", "E": "Malingering"}, "label": "C"}
+{"id": "MM-1299", "options": {"A": "Left anterior fascicular block", "B": "ST elevation myocardial infarction", "C": "Unstable angina", "D": "Right bundle branch block", "E": "Left bundle branch block"}, "label": "A"}
+{"id": "MM-1309", "options": {"A": "Asbestosis", "B": "Sarcoidosis", "C": "Asthma", "D": "Lung cancer", "E": "Chronic obstructive pulmonary disease"}, "label": "C"}
+{"id": "MM-1328", "options": {"A": "Myocardial infarction", "B": "Pulmonary embolism", "C": "Supraventricular tachycardia", "D": "Atrial fibrillation", "E": "Unstable angina"}, "label": "D"}
+{"id": "MM-1330", "options": {"A": "HIV-associated diffuse large B-cell lymphoma", "B": "Wandering spleen", "C": "Disseminated Mycobacterium avium–intracellulare infection", "D": "Chronic hepatitis C coinfection", "E": "Multicentric Castleman’s disease"}, "label": "C"}
+{"id": "MM-1336", "options": {"A": "Coccidioidomycosis", "B": "Paracoccidioidomycosis", "C": "Histoplasmosis", "D": "Aspergillosis", "E": "Blastomycosis"}, "label": "C"}
+{"id": "MM-1339", "options": {"A": "Obstipation", "B": "Subphrenic abscess", "C": "Pancreatic phlegmon", "D": "Trichobezoar", "E": "Gastrointestinal stromal tumor"}, "label": "D"}
+{"id": "MM-1342", "options": {"A": "Ewing sarcoma", "B": "Osteosarcoma", "C": "Eosinophilic granuloma", "D": "Enchondroma", "E": "Osteoid osteoma"}, "label": "B"}
+{"id": "MM-1345", "options": {"A": "Smoker’s melanosis", "B": "Cushing’s disease", "C": "Hemochromatosis", "D": "Lichen planus pigmentosus", "E": "Diffuse melanosis cutis"}, "label": "E"}
+{"id": "MM-1347", "options": {"A": "Pancreatic agenesis", "B": "Pancreatic pseudocyst", "C": "Chronic pancreatitis", "D": "Acute pancreatitis", "E": "Pancreatic lipomatosis"}, "label": "E"}
+{"id": "MM-1350", "options": {"A": "A", "B": "E", "C": "B", "D": "D", "E": "C"}, "label": "D"}
+{"id": "MM-1354", "options": {"A": "Chancroid", "B": "Condylomata acuminata", "C": "Primary syphilis", "D": "Lymphogranuloma venereum", "E": "Granuloma inguinale"}, "label": "E"}
+{"id": "MM-1355", "options": {"A": "Tuberculosis", "B": "Cystic fibrosis", "C": "Allergic bronchopulmonary aspergillosis", "D": "Sarcoidosis", "E": "Primary hyperparathyroidism"}, "label": "A"}
+{"id": "MM-1359", "options": {"A": "Leukocytoclastic vasculitis", "B": "Neutrophilic dermatosis", "C": "Pemphigus vulgaris", "D": "Blastomyces dermatitidis", "E": "Dermatitis herpetiformis"}, "label": "B"}
+{"id": "MM-1365", "options": {"A": "Retropharyngeal abscess", "B": "Thyroid nodule", "C": "Foreign body aspiration", "D": "Peritonsillar abscess", "E": "Epiglottitis"}, "label": "E"}
+{"id": "MM-1367", "options": {"A": "Pancreatic adenocarcinoma", "B": "Intraductal papillary mucinous neoplasm", "C": "Autoimmune pancreatitis", "D": "Solid pseudopapillary neoplasm", "E": "Serous cystadenoma"}, "label": "A"}
+{"id": "MM-1372", "options": {"A": "Mitral stenosis", "B": "Pulmonary regurgitation", "C": "Mitral regurgitation", "D": "Aortic stenosis", "E": "Aortic regurgitation"}, "label": "E"}
+{"id": "MM-1376", "options": {"A": "Type IV acromioclavicular separation", "B": "Failure of fusion between the meso-acromion and meta-acromion", "C": "Failure of fusion between the meso-acromion and pre-acromion", "D": "Deltoid avulsion", "E": "Acute acromial fracture"}, "label": "B"}
+{"id": "MM-1377", "options": {"A": "Retinal detachment", "B": "Central retinal artery occlusion", "C": "Retinal vein occlusion", "D": "Closed angle glaucoma", "E": "Papilledema"}, "label": "C"}
+{"id": "MM-1378", "options": {"A": "Pellucid marginal degeneration", "B": "Keratoglobus", "C": "Astigmatism", "D": "Keratoconus", "E": "Corneal ulcer"}, "label": "D"}
+{"id": "MM-1381", "options": {"A": "Leprosy", "B": "Staphylococcal scalded skin syndrome", "C": "Lyme disease", "D": "Weil’s disease", "E": "Legionnaires\" disease"}, "label": "A"}
+{"id": "MM-1385", "options": {"A": "Poststreptococcal pustulosis", "B": "Palmoplantar psoriasis", "C": "Scabies", "D": "Immunoglobulin A pemphigus", "E": "Jarisch–Herxheimer reaction"}, "label": "A"}
+{"id": "MM-1396", "options": {"A": "Persistent pupillary membranes", "B": "Aniridia", "C": "Coloboma of the iris", "D": "Granulomatous iritis", "E": "Prominent iris collarette"}, "label": "E"}
+{"id": "MM-1404", "options": {"A": "Closed-angle glaucoma", "B": "Recent cataract surgery", "C": "Central retinal artery occlusion", "D": "Diabetic retinopathy", "E": "Open-angle glaucoma"}, "label": "D"}
+{"id": "MM-1406", "options": {"A": "Sebaceous cysts", "B": "Echinococcal cysts", "C": "Metastatic sarcoma", "D": "Ganglion cysts", "E": "Lipomas"}, "label": "B"}
+{"id": "MM-1409", "options": {"A": "Intraocular lens dislocation", "B": "Orbital wall fracture", "C": "Posterior uveitis", "D": "Vitreous hemorrhage", "E": "Retinal detachment"}, "label": "A"}
+{"id": "MM-1410", "options": {"A": "Toxic shock syndrome", "B": "Crohn’s disease", "C": "Diaphragmatic hernia", "D": "Acute pancreatitis", "E": "Lead poisoning"}, "label": "D"}
+{"id": "MM-1412", "options": {"A": "Perivalvular leak with pseudoaneurysm formation", "B": "None of the above", "C": "Vegetation of the mitral valve", "D": "Vegetation of the aortic valve", "E": "Abscess involving the aortic valve with fistula into the RV"}, "label": "E"}
+{"id": "MM-1413", "options": {"A": "Glandular invasion of myometrium", "B": "Intramural uterine leiomyomas", "C": "Secretory phase endometrium", "D": "Proliferative phase endometrium", "E": "Infiltrative endometrial carcinoma"}, "label": "C"}
+{"id": "MM-1416", "options": {"A": "Atrial flutter", "B": "Wide complex tachycardia", "C": "Atrial fibrillation", "D": "Sick sinus (tachy-brady) syndrome", "E": "EEG artifact"}, "label": "B"}
+{"id": "MM-1424", "options": {"A": "Pneumonia", "B": "Mitral stenosis", "C": "Sarcoidosis", "D": "Pulmonary embolism", "E": "Pneumothorax"}, "label": "D"}
+{"id": "MM-1435", "options": {"A": "Complete heart block", "B": "First degree heart block", "C": "Second degree type I heart block", "D": "Second degree type II heart block", "E": "Junctional bradycardia"}, "label": "C"}
+{"id": "MM-1448", "options": {"A": "Midgut volvulus", "B": "Duodenal atresia", "C": "Hirschsprung disease", "D": "Pyloric stenosis", "E": "Cystic fibrosis"}, "label": "E"}
+{"id": "MM-1455", "options": {"A": "Pancoast tumor", "B": "Scrofula", "C": "Medullary carcinoma of the thyroid", "D": "Peripancreatic malignancy", "E": "Hodgkin\"s lymphoma"}, "label": "D"}
+{"id": "MM-1465", "options": {"A": "Clostridium difficile", "B": "Ischemic colitis", "C": "Ulcerative colitis", "D": "Crohn disease", "E": "Infectious diarrhea"}, "label": "B"}
+{"id": "MM-1466", "options": {"A": "Sigmoid volvulus", "B": "Colocolonic intussusception", "C": "Colonic pseudo-obstruction", "D": "Crohnâ€™s disease", "E": "Ileocolic intussusception"}, "label": "B"}
+{"id": "MM-1468", "options": {"A": "Rotator cuff tear", "B": "HAGL lesion", "C": "ALPSA lesion", "D": "Bankart lesion", "E": "SLAP tear"}, "label": "B"}
+{"id": "MM-1470", "options": {"A": "Anterior column posterior hemitransverse", "B": "Anterior column", "C": "Transverse", "D": "T-type", "E": "Both column"}, "label": "C"}
+{"id": "MM-1474", "options": {"A": "Tooth", "B": "Osteoma", "C": "Calcified polyp", "D": "Enchondroma", "E": "Rhinolith"}, "label": "A"}
+{"id": "MM-1475", "options": {"A": "Ochronosis", "B": "Cholesteatoma", "C": "Fracture of the temporal bone", "D": "Otomycosis", "E": "Relapsing polychondritis"}, "label": "C"}
+{"id": "MM-1481", "options": {"A": "Hypertrophic", "B": "Infectious", "C": "Stress-induced", "D": "Dilated", "E": "Restrictive"}, "label": "E"}
+{"id": "MM-1482", "options": {"A": "Antithrombin III deficiency", "B": "Protein C deficiency", "C": "Antiphospholipid syndrome", "D": "Protein S deficiency", "E": "Factor V Leiden"}, "label": "E"}
+{"id": "MM-1490", "options": {"A": "Normal labor", "B": "Placenta previa", "C": "Disseminated intravascular coagulation (DIC)", "D": "Vasa previa", "E": "Placental abruption"}, "label": "A"}
+{"id": "MM-1500", "options": {"A": "Adenovirus infection", "B": "Scarlet fever", "C": "Rubella", "D": "Infectious mononucleosis", "E": "Measles"}, "label": "C"}
+{"id": "MM-1506", "options": {"A": "Subarachnoid hematoma", "B": "Epidural hematoma", "C": "Subdural hematoma", "D": "Intraparenchymal hematoma", "E": "Extracranial hematoma"}, "label": "B"}
+{"id": "MM-1508", "options": {"A": "Basal-cell carcinoma", "B": "Merkel-cell carcinoma", "C": "Pyogenic granuloma", "D": "Sporotrichosis", "E": "Furuncle"}, "label": "B"}
+{"id": "MM-1512", "options": {"A": "Laryngomalacia", "B": "Zenker diverticulum", "C": "Esophageal obstruction", "D": "Croup", "E": "Spina bifida"}, "label": "D"}
+{"id": "MM-1523", "options": {"A": "Choledocholithiasis", "B": "Acute cholecystitis", "C": "Nephrolithiasis", "D": "Adenocarcinoma of the gallbladder", "E": "Acute pancreatitis"}, "label": "D"}
+{"id": "MM-1527", "options": {"A": "Hemorrhage", "B": "Metastasis", "C": "Pheochromocytoma", "D": "Cyst", "E": "Adenoma"}, "label": "E"}
+{"id": "MM-1530", "options": {"A": "Sarcoidosis", "B": "Reiter syndrome", "C": "Syphilis", "D": "Miliary tuberculosis", "E": "Psoriasis"}, "label": "A"}
+{"id": "MM-1539", "options": {"A": "Poor surgical technique", "B": "Acute sepsis", "C": "Development of pelvic discontinuity", "D": "Catastrophic implant failure", "E": "Rheumatoid arthritis flare"}, "label": "C"}
+{"id": "MM-1540", "options": {"A": "Partial articular sided thickness rotator cuff tear (PASTA)", "B": "Humeral avulsion of the glenohumeral ligament (HAGL)", "C": "Glenoid labral articular defect (GLAD)", "D": "Superior labral anterior posterior lesion (SLAP)", "E": "Anterior labral periosteal sleeve avulsion (ALPSA)"}, "label": "B"}
+{"id": "MM-1541", "options": {"A": "Zika virus", "B": "Toxoplasma gondii", "C": "Syphilis", "D": "Cytomegalovirus", "E": "Rubella"}, "label": "B"}
+{"id": "MM-1553", "options": {"A": "Poison ivy", "B": "Id reaction", "C": "Fixed drug reaction", "D": "Insect bite hypersensitivity", "E": "Photodermatitis"}, "label": "E"}
+{"id": "MM-1559", "options": {"A": "Partial articular surface tendon avulsion (PASTA)", "B": "Humeral avulsion of the glenohumeral ligament (HAGL)", "C": "Anterior labral periosteal sleeve avulsion (ALPSA)", "D": "Superior labral anterior to posterior tear (SLAP)", "E": "Glenolabral articular disruption (GLAD) lesion"}, "label": "A"}
+{"id": "MM-1576", "options": {"A": "First degree heart block", "B": "Second degree heart block type II", "C": "Seizure", "D": "Second degree heart block type I", "E": "Complete heart block"}, "label": "B"}
+{"id": "MM-1598", "options": {"A": "Nonproliferative diabetic retinopathy", "B": "Proliferative diabetic retinopathy", "C": "Presbyopia", "D": "Macular edema", "E": "Diabetic cataracts"}, "label": "C"}
+{"id": "MM-1611", "options": {"A": "Familial multiple lipomatosis", "B": "Madelung\"s disease", "C": "Rheumatoid arthritis", "D": "Neurofibromatosis, type 1", "E": "Dercum\"s disease"}, "label": "A"}
+{"id": "MM-1619", "options": {"A": "Tyrosine kinase abnormality", "B": "Adenosine deaminase deficiency", "C": "Chloride channel defect", "D": "Decrease in all immunoglobulin levels", "E": "Abnormal cilia motility"}, "label": "E"}
+{"id": "MM-1624", "options": {"A": "Sebaceous carcinoma", "B": "Dermatofibroma", "C": "Nodular melanoma", "D": "Invasive squamous cell carcinoma", "E": "Superficial basal cell carcinoma"}, "label": "B"}
+{"id": "MM-1634", "options": {"A": "Pulmonary arterial hypertension", "B": "Cor pulmonale", "C": "COPD exacerbation", "D": "Acute myocardial infarction", "E": "Acute pulmonary embolism"}, "label": "E"}
+{"id": "MM-1639", "options": {"A": "Couvade syndrome", "B": "Pseudocyesis", "C": "Recent miscarriage", "D": "Feigned pregnancy", "E": "Delusion of pregnancy"}, "label": "B"}
+{"id": "MM-1641", "options": {"A": "Eosinophilic bronchitis", "B": "Tracheal inhalation injury", "C": "Bronchial polyposis", "D": "Bronchial tuberculosis", "E": "Pulmonary sarcoidosis"}, "label": "A"}
+{"id": "MM-1645", "options": {"A": "Traumatic aortic injury", "B": "Aberrant subclavian artery", "C": "Pulmonary sling", "D": "Double aortic arch", "E": "Right aortic arch"}, "label": "C"}
+{"id": "MM-1652", "options": {"A": "Chronic hyperglycemia", "B": "HIV infection", "C": "Long-standing hypertension", "D": "Amyloidosis", "E": "Systemic lupus erythematosus"}, "label": "A"}
+{"id": "MM-1653", "options": {"A": "Component loosening due to polyethylene wear", "B": "Lateral ligament failure", "C": "It is normal to have continued pain at 10 months following this surgery", "D": "Improper surgical procedure", "E": "Syndesmotic nonunion"}, "label": "E"}
+{"id": "MM-1657", "options": {"A": "Contact dermatitis", "B": "Eczema herpeticum", "C": "Impetigo", "D": "Drug eruption", "E": "Dermatitis herpetiformis"}, "label": "B"}
+{"id": "MM-1661", "options": {"A": "Osteofibrous dysplasia", "B": "Low-grade chondrosarcoma", "C": "Aneurysmal bone cyst", "D": "Adamantinoma", "E": "Non-ossifying fibroma"}, "label": "A"}
+{"id": "MM-1663", "options": {"A": "Strongyloidiasis", "B": "Trichuriasis", "C": "Colorectal cancer", "D": "Enterobiasis", "E": "Hemorrhoids"}, "label": "D"}
+{"id": "MM-1664", "options": {"A": "Rheumatoid arthritis", "B": "Septic arthritis", "C": "Lyme arthritis", "D": "Gout", "E": "Pseudogout"}, "label": "D"}
+{"id": "MM-1688", "options": {"A": "Malignant syphilis", "B": "Bacillary angiomatosis", "C": "Lupus vulgaris (tuberculosis luposa)", "D": "Norwegian scabies", "E": "Disseminated histoplasmosis"}, "label": "A"}
+{"id": "MM-1689", "options": {"A": "Trichotillomania", "B": "Discoid lupus erythematosus", "C": "Secondary syphilis", "D": "Androgenic alopecia", "E": "Hypothyroidism"}, "label": "E"}
+{"id": "MM-1695", "options": {"A": "Miliary tuberculosis", "B": "Lymphangitis carcinomatosis", "C": "Pneumocystis jirovecii pneumonia", "D": "CMV pneumonia", "E": "Invasive Aspergillosis"}, "label": "D"}
+{"id": "MM-1699", "options": {"A": "Osteochondritis dissecans", "B": "Anterior cruciate ligament tear", "C": "Medial meniscal tear", "D": "Tibial plateau fracture", "E": "Lateral collateral ligament strain"}, "label": "A"}
+{"id": "MM-1701", "options": {"A": "Ogilvie syndrome", "B": "Cecal volvulus", "C": "Ileus", "D": "Small bowel obstruction", "E": "Sigmoid volvulus"}, "label": "B"}
+{"id": "MM-1706", "options": {"A": "Internal hemorrhoids", "B": "Anorectal cancer", "C": "Perianal abscess", "D": "Anal fissure", "E": "Pilonidal cyst"}, "label": "D"}
+{"id": "MM-1716", "options": {"A": "Atrial fibrillation", "B": "Supraventricular tachycardia", "C": "Atrial flutter", "D": "Multifocal atrial tachycardia", "E": "Premature atrial contractions"}, "label": "E"}
+{"id": "MM-1724", "options": {"A": "Microcytic anemia", "B": "Polycythemia", "C": "Megaloblastic anemia", "D": "Hemolytic anemia", "E": "Aplastic anemia"}, "label": "C"}
+{"id": "MM-1733", "options": {"A": "Autoimmune polyglandular syndrome", "B": "Common variable immunodeficiency", "C": "Gastric carcinoma", "D": "HIV infection", "E": "Celiac disease"}, "label": "B"}
+{"id": "MM-1737", "options": {"A": "Broncholith", "B": "Pulmonary embolism", "C": "Bronchogenic carcinoma", "D": "Tuberculosis", "E": "Pseudoaneurysm"}, "label": "A"}
+{"id": "MM-1748", "options": {"A": "Hereditary spherocytosis", "B": "Sickle cell anemia", "C": "Drug-induced hemolytic anemia", "D": "Disseminated intravascular coagulation", "E": "Autoimmune hemolytic anemia"}, "label": "A"}
+{"id": "MM-1754", "options": {"A": "Dubin-Johnson syndrome", "B": "Upper gastrointestinal bleed", "C": "Metastatic colon cancer", "D": "Liver cirrhosis", "E": "Heavy-metal toxicity"}, "label": "C"}
+{"id": "MM-1756", "options": {"A": "Bleeding arising in the ileum", "B": "Bleeding arising in the transverse colon", "C": "Incidental left renal artery aneurysm", "D": "Free Tc-99m pertechnetate in the stomach", "E": "Bleeding arising from a splenic artery pseudoaneurysm"}, "label": "B"}
+{"id": "MM-1760", "options": {"A": "Squamous cell carcinoma", "B": "Poor wound healing secondary to diabetes", "C": "Basal cell carcinoma", "D": "Melanoma", "E": "Actinic keratosis"}, "label": "A"}
+{"id": "MM-1764", "options": {"A": "Papilledema", "B": "Temporal arteritis", "C": "Hypertensive retinopathy", "D": "Diabetic retinopathy", "E": "Cholesterol emboli"}, "label": "E"}
+{"id": "MM-1766", "options": {"A": "Adductor strain", "B": "Slipped capital femoral epiphysis", "C": "Avascular necrosis of the femoral head", "D": "Fracture of trochanter minor", "E": "Femoral neck fracture"}, "label": "D"}
+{"id": "MM-1767", "options": {"A": "Bartholin duct abscess", "B": "Intraepithelial carcinoma", "C": "Vaginal melanoma", "D": "Lichen simplex chronicus", "E": "Plasma cell vulvitis"}, "label": "B"}
+{"id": "MM-1774", "options": {"A": "Normal variant", "B": "Chronic hydrocephalus with colpocephaly", "C": "Generalized cerebral atrophy", "D": "Acute intracranial hemorrhage", "E": "Agenesis of the corpus callosum"}, "label": "E"}
+{"id": "MM-1778", "options": {"A": "Osteosarcoma", "B": "Ewing sarcoma", "C": "Multiple myeloma", "D": "Giant cell tumor", "E": "Chondrosarcoma"}, "label": "A"}
+{"id": "MM-1790", "options": {"A": "Necrotizing fasciitis", "B": "Staphylococcal scalded skin syndrome", "C": "Cellulitis of the subdermis", "D": "Toxic shock syndrome", "E": "Erysipelas"}, "label": "E"}
+{"id": "MM-1794", "options": {"A": "Bicuspid aortic valve", "B": "Quadricuspid aortic valve", "C": "Calcified aortic valve", "D": "Tricuspid aortic valve", "E": "Unicuspid aortic valve"}, "label": "B"}
+{"id": "MM-1798", "options": {"A": "Residual effect of bacterial meningitis", "B": "Bilateral otitis media with effusion", "C": "Neurofibromatosis, type 2", "D": "Gentamicin effect", "E": "Congenital deafness"}, "label": "B"}
+{"id": "MM-1806", "options": {"A": "Skull fracture", "B": "Pituitary tumor", "C": "Osteoma", "D": "Nasal foreign body", "E": "Sinusitis"}, "label": "B"}
+{"id": "MM-1807", "options": {"A": "Oil cyst", "B": "Fibroadenoma", "C": "Gynecomastia", "D": "Lipoma", "E": "Hamartoma"}, "label": "D"}
+{"id": "MM-1811", "options": {"A": "Mediastinal Fibrosis", "B": "Sarcoidosis", "C": "Hematoma", "D": "Lymphoma", "E": "Metastatic prostate cancer"}, "label": "D"}
+{"id": "MM-1816", "options": {"A": "Echinococcosis", "B": "Klebsiella abscess", "C": "Cystic teratoma", "D": "Hepatic hemangioma", "E": "Cysticercosis"}, "label": "A"}
+{"id": "MM-1818", "options": {"A": "Cholesteatoma", "B": "Glomus tumor", "C": "Foreign body", "D": "Chronic suppurative otitis media", "E": "Tympanosclerosis"}, "label": "A"}
+{"id": "MM-1831", "options": {"A": "Sarcoidosis", "B": "Aspergillosis", "C": "Syphilis", "D": "Granuloma annulare", "E": "Coccidioidomycosis"}, "label": "A"}
+{"id": "MM-1838", "options": {"A": "Acromegaly", "B": "Monocytic leukemia", "C": "Periodontitis", "D": "Dermatomyositis", "E": "Scurvy"}, "label": "D"}
+{"id": "MM-1839", "options": {"A": "Esophageal cancer", "B": "Teratoma", "C": "Neurofibroma", "D": "Aortic aneurysm", "E": "Thymoma"}, "label": "C"}
+{"id": "MM-1849", "options": {"A": "Dorsal patellar defect", "B": "Osteochondral defect", "C": "Subchondral cyst", "D": "Osteochondritis dissecans", "E": "Chondroblastoma"}, "label": "A"}
+{"id": "MM-1850", "options": {"A": "Second degree atrioventricular block, Mobitz type II", "B": "First degree atrioventricular block", "C": "Third degree atrioventricular block", "D": "Sinus bradycardia", "E": "Second degree atrioventricular block, Mobitz type I"}, "label": "E"}
+{"id": "MM-1860", "options": {"A": "Syringomyelia", "B": "Mesothelioma", "C": "Lung adenocarcinoma", "D": "Tuberculosis", "E": "Rotator cuff tendinopathy"}, "label": "C"}
+{"id": "MM-1863", "options": {"A": "Scabies", "B": "Nummular eczema", "C": "Psoriasis", "D": "Ringworm", "E": "Herpetic whitlow"}, "label": "C"}
+{"id": "MM-1870", "options": {"A": "Septic thrombophlebitis of the internal jugular vein (Lemierre’s syndrome)", "B": "Peritonsillar abscess", "C": "Epiglottitis", "D": "Submandibular space infection (Ludwig’s angina)", "E": "Retropharyngeal abscess"}, "label": "E"}
+{"id": "MM-1872", "options": {"A": "Avascular necrosis of the spleen", "B": "Gastrosplenic fistulization", "C": "Emphysematous infection of the spleen", "D": "Bezoar", "E": "Visceral leishmaniasis"}, "label": "B"}
+{"id": "MM-1877", "options": {"A": "Hypertensive crisis", "B": "Syphilis", "C": "Waldenström’s macroglobulinemia", "D": "Closed-angle glaucoma", "E": "HIV"}, "label": "C"}
+{"id": "MM-1888", "options": {"A": "Histoplasmosis", "B": "Miliary tuberculosis", "C": "Portal hypertension", "D": "Amyloidosis", "E": "Lymphoma"}, "label": "A"}
+{"id": "MM-1894", "options": {"A": "Placenta accreta", "B": "Placenta previa", "C": "Placenta percreta", "D": "Placenta extrachorialis", "E": "Placenta increta"}, "label": "C"}
+{"id": "MM-1898", "options": {"A": "Vitamin B12 deficiency", "B": "Chronic bleeding", "C": "Sickle cell disease", "D": "Glucose-6-phosphate dehydrogenase deficiency", "E": "Plasmodium falciparum"}, "label": "C"}
+{"id": "MM-1905", "options": {"A": "Fixed drug eruption", "B": "Cutaneous lupus", "C": "Rosacea", "D": "Dermatomyositis", "E": "Erysipelas"}, "label": "B"}
+{"id": "MM-1927", "options": {"A": "Uremia", "B": "Syphilis", "C": "Diabetes", "D": "Alcoholism", "E": "Syringomyelia"}, "label": "E"}
+{"id": "MM-1930", "options": {"A": "Deficiency of C1 esterase inhibitor", "B": "Sinusitus", "C": "Infection of the salivary gland", "D": "Hyperthyroidism", "E": "Allergic reaction to the medication"}, "label": "A"}
+{"id": "MM-1936", "options": {"A": "Mass effect obstructing the superior vena cava", "B": "Superior sulcus tumor", "C": "Pulmonary embolus", "D": "Mass in the thoracic region of the spinal cord", "E": "Pleural effusion"}, "label": "B"}
+{"id": "MM-1949", "options": {"A": "Measles", "B": "Mumps", "C": "Scarlet fever", "D": "Coxsackie viral infection", "E": "Infectious mononucleosis"}, "label": "A"}
+{"id": "MM-1952", "options": {"A": "Pernicious anemia", "B": "Alcohol use disorder", "C": "Lead poisoning", "D": "Anemia of chronic inflammation", "E": "Beta-thalassemia minor"}, "label": "B"}
+{"id": "MM-1964", "options": {"A": "Vaso-occlusive crisis", "B": "Salmonella species osteomyelitis", "C": "Osteoid osteoma", "D": "Osteosarcoma", "E": "Staphylococcus aureus osteomyelitis"}, "label": "B"}

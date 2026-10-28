@@ -1,0 +1,91 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-1811",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 78-year-old man. I had a radical prostatectomy for prostate cancer three years ago.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "format_repairs": 1,
+        "message": "I have already told you everything I know. I have nothing more to add.",
+        "patient_called": false,
+        "query": "What specific symptoms are you experiencing that brought you in today?",
+        "state_after": "collecting",
+        "status": "exhausted",
+        "type": "ask_patient",
+        "utterance": "I have already told you everything I know. I have nothing more to add."
+      },
+      {
+        "collection_actions": 2,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Not provided for the requested examination.",
+        "query": "Perform a digital rectal examination (DRE) of the prostate.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "Perform a digital rectal examination (DRE) of the prostate."
+        ]
+      },
+      {
+        "collection_actions": 3,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Not provided for the requested examination.",
+        "query": "Perform a urinalysis.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "Perform a urinalysis."
+        ]
+      },
+      {
+        "collection_actions": 3,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient is a 78-year-old male with a history of radical prostatectomy for prostate cancer. The most critical finding is the high risk of recurrence given his age and prior malignancy. While the provided clinical record contains no specific imaging or physical exam data to directly visualize a mass, hematoma, or mediastinal involvement, the history strongly predisposes him to metastatic disease. Mediastinal fibrosis, sarcoidosis, and lymphoma are less likely without specific systemic symptoms or imaging evidence of those specific pathologies. A hematoma would typically present with acute pain and a history of trauma or anticoagulation, which are not mentioned. Therefore, metastatic prostate cancer is the most probable diagnosis based on the patient's significant oncologic history, as it is the most common cause of late recurrence in this demographic compared to the other listed options.",
+    "result": {
+      "collection_actions": 3,
+      "id": "MM-1811",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "E",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Mediastinal Fibrosis",
+      "B": "Sarcoidosis",
+      "C": "Hematoma",
+      "D": "Lymphoma",
+      "E": "Metastatic prostate cancer"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-1811"
+  }
+}

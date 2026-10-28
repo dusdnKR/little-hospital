@@ -1,0 +1,83 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-1336",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 60-year-old male missionary. I present with a one-month history of a nonproductive cough that began five days after returning from a trip to Nicaragua.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [
+          {
+            "id": "P002",
+            "text": "My symptoms include fevers, chills, night sweats, myalgias, and mild shortness of breath."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Have you had any recent travel to or exposure to areas with malaria, tuberculosis, or other respiratory infections in the last few months? Also, have you noticed any weight loss, night sweats, or hemoptysis (coughing up blood)?",
+        "selected_fact_ids": [
+          "OPENING",
+          "P002"
+        ],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "ask_patient",
+        "utterance": "I am a 60-year-old male missionary. I present with a one-month history of a nonproductive cough that began five days after returning from a trip to Nicaragua. My symptoms include fevers, chills, night sweats, myalgias, and mild shortness of breath."
+      },
+      {
+        "collection_actions": 2,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Not provided for the requested examination.",
+        "query": "Request a chest X-ray to evaluate for pneumonia, tuberculosis, or other pulmonary infiltrates given the recent travel history and respiratory symptoms.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "Request a chest X-ray to evaluate for pneumonia, tuberculosis, or other pulmonary infiltrates given the recent travel history and respiratory symptoms."
+        ]
+      },
+      {
+        "collection_actions": 2,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient is a 60-year-old male with a one-month cough and systemic symptoms including fevers, chills, night sweats, and myalgias. The key finding is the recent travel to Nicaragua, which is endemic for Coccidioidomycosis. The presence of night sweats and myalgias strongly supports this diagnosis. Histoplasmosis is endemic to the Ohio/Mississippi river valleys, not Nicaragua. Paracoccidioidomycosis is found in South America but is less common than coccidioidomycosis in this specific region. Aspergillosis typically presents with acute onset and immunocompromise, not a one-month chronic course. Blastomycosis is found in the Great Lakes region. Therefore, the travel history and systemic symptoms best support Coccidioidomycosis.",
+    "result": {
+      "collection_actions": 2,
+      "id": "MM-1336",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "A",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Coccidioidomycosis",
+      "B": "Paracoccidioidomycosis",
+      "C": "Histoplasmosis",
+      "D": "Aspergillosis",
+      "E": "Blastomycosis"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-1336"
+  }
+}

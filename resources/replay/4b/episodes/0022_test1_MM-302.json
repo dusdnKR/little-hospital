@@ -1,0 +1,80 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-302",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am an elderly male patient, aged 87, with a medical history of chronic kidney disease, hypertension, and atrial fibrillation. I seek emergency care due to constipation and lower abdominal discomfort lasting three days.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "format_repairs": 0,
+        "message": "I have already told you everything I know. I have nothing more to add.",
+        "patient_called": false,
+        "query": "Do you have any nausea or vomiting?",
+        "state_after": "collecting",
+        "status": "exhausted",
+        "type": "ask_patient",
+        "utterance": "I have already told you everything I know. I have nothing more to add."
+      },
+      {
+        "collection_actions": 2,
+        "exams": [
+          {
+            "id": "radiograph",
+            "images": [
+              "MM-302-a.jpeg"
+            ],
+            "text": "Upon reviewing the provided abdominal plain film radiograph,"
+          }
+        ],
+        "format_repairs": 0,
+        "query": "abdominal radiograph",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "radiograph"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_requests": []
+      },
+      {
+        "collection_actions": 2,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The abdominal radiograph shows a massively dilated cecum with a characteristic 'coffee bean' appearance, indicating a closed-loop obstruction. This specific configuration, where the cecum twists on itself, is pathognomonic for cecal volvulus. While small bowel obstruction presents with multiple dilated loops, it lacks this distinct sigmoid/cecal configuration. Therefore, the imaging findings strongly support cecal volvulus over other options.",
+    "result": {
+      "collection_actions": 2,
+      "id": "MM-302",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "D",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Constipation",
+      "B": "Small bowel obstruction",
+      "C": "Ogilvie’s Syndrome (acute colonic pseudo-obstruction)",
+      "D": "Cecal volvulus",
+      "E": "Hiatal hernia"
+    }
+  },
+  "score": {
+    "correct": true,
+    "id": "MM-302"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-1811",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 78-year-old man. I had a radical prostatectomy for prostate cancer three years ago.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "format_repairs": 0,
+        "message": "I have already told you everything I know. I have nothing more to add.",
+        "patient_called": false,
+        "query": "What symptoms are you experiencing right now?",
+        "state_after": "collecting",
+        "status": "exhausted",
+        "type": "ask_patient",
+        "utterance": "I have already told you everything I know. I have nothing more to add."
+      },
+      {
+        "collection_actions": 2,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Not provided for the requested examination.",
+        "query": "Digital rectal examination",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "Digital rectal examination"
+        ]
+      },
+      {
+        "collection_actions": 3,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Not provided for the requested examination.",
+        "query": "Prostate-specific antigen (PSA) blood test",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "Prostate-specific antigen (PSA) blood test"
+        ]
+      },
+      {
+        "collection_actions": 3,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient is a 78-year-old male with a history of radical prostatectomy. The clinical record contains no new findings, images, or symptoms. The provided notes describe adrenal hematoma, cardiac sarcoidosis, and lymphoma but do not apply to this specific patient's data. Without imaging showing a mass, ECG changes, or systemic symptoms like fever, none of the options can be supported. The closest alternative, metastatic prostate cancer, is less well-supported because there is no evidence of recurrence or new lesions, whereas the other diagnoses require specific findings absent here.",
+    "result": {
+      "collection_actions": 3,
+      "id": "MM-1811",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "E",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Mediastinal Fibrosis",
+      "B": "Sarcoidosis",
+      "C": "Hematoma",
+      "D": "Lymphoma",
+      "E": "Metastatic prostate cancer"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-1811"
+  }
+}

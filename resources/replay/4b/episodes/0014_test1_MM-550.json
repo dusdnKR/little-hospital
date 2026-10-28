@@ -1,0 +1,87 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-550",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I have pharyngeal discomfort.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "format_repairs": 0,
+        "message": "I have already told you everything I know. I have nothing more to add.",
+        "patient_called": false,
+        "query": "Can you describe the nature of your pharyngeal discomfort? Is it more of a pain, scratchiness, or tightness? Does it worsen when you swallow?",
+        "state_after": "collecting",
+        "status": "exhausted",
+        "type": "ask_patient",
+        "utterance": "I have already told you everything I know. I have nothing more to add."
+      },
+      {
+        "case_image_attached": [
+          "source_image"
+        ],
+        "case_image_note": "An unlabeled image from the case file is attached to this examination request. It is not the result of the examination that was named.",
+        "collection_actions": 2,
+        "exams": [
+          {
+            "id": "source_image",
+            "images": [
+              "MM-550-a.jpeg"
+            ],
+            "text": "Unlabeled image from the case file. The source does not state its modality or body site."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Perform a physical examination of the pharynx to assess for erythema, exudates, and lymphadenopathy.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "source_image"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "Perform a physical examination of the pharynx to assess for erythema, exudates, and lymphadenopathy."
+        ]
+      },
+      {
+        "collection_actions": 2,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The image displays a patient with multiple erythematous, scaly plaques and papules distributed across the face, particularly on the cheeks and forehead, consistent with discoid lupus erythematosus. This presentation aligns with the characteristic facial distribution and morphology of discoid lupus. Syphilis is less likely as it typically presents with palmar/plantar lesions rather than this specific facial pattern. Acne, impetigo, and mastocytosis do not match the chronic, scaly plaque appearance seen here.\n\nB",
+    "result": {
+      "collection_actions": 2,
+      "id": "MM-550",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "B",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Syphilis",
+      "B": "Discoid lupus",
+      "C": "Acne",
+      "D": "Impetigo",
+      "E": "Mastocytosis"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-550"
+  }
+}

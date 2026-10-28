@@ -1,0 +1,125 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-85",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 63-year-old female patient. I come to my primary care provider reporting dizziness and lightheadedness for the past four days.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [
+          {
+            "id": "P002",
+            "text": "I deny experiencing fever, chest pain, or dyspnea."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Are you experiencing any shortness of breath, chest pain, or palpitations along with your dizziness?",
+        "selected_fact_ids": [
+          "P002"
+        ],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "ask_patient",
+        "utterance": "I deny experiencing fever, chest pain, or dyspnea."
+      },
+      {
+        "collection_actions": 2,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Have you noticed any changes in your vision, such as blurring or double vision, or have you experienced any weakness or numbness on one side of your body?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 3,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Have you experienced any recent falls, blackouts, or fainting spells?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 4,
+        "format_repairs": 0,
+        "message": "You already asked this exact question; the answer will not change. Ask something different, request an examination, or finish.",
+        "patient_called": false,
+        "query": "Have you experienced any recent falls, blackouts, or fainting spells?",
+        "state_after": "collecting",
+        "status": "blocked_repeat",
+        "type": "ask_patient"
+      },
+      {
+        "collection_actions": 5,
+        "exams": [
+          {
+            "id": "vital_signs",
+            "images": [],
+            "text": "Her vital signs show: temperature 36.6°C (97.9°F), blood pressure 110/70 mmHg, heart rate 45 beats/min, and oxygen saturation 98% on room air.\nThe cardiovascular exam reveals no abnormal heart sounds."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Please request a physical examination focusing on vital signs (blood pressure, heart rate) and a neurological exam.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "vital_signs"
+        ],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "neurological exam"
+        ]
+      },
+      {
+        "collection_actions": 5,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient presents with dizziness and significant bradycardia (45 bpm) without fever or chest pain. The cardiovascular exam notes no abnormal heart sounds, and the provided images are empty, meaning no ECG is visible to confirm conduction blocks. While the notes describe specific ECG patterns for Mobitz I, II, and Third-degree block, the absence of an ECG image prevents confirming these diagnoses. The closest alternative, Sinus bradycardia, fits the clinical picture of a slow heart rate with stable vitals and lack of conduction failure evidence.",
+    "result": {
+      "collection_actions": 5,
+      "id": "MM-85",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "E",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Mobitz type I second-degree AV block",
+      "B": "Sick sinus syndrome",
+      "C": "Mobitz type II second-degree AV block",
+      "D": "Third-degree AV block",
+      "E": "Sinus bradycardia"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-85"
+  }
+}

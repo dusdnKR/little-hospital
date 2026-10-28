@@ -1,0 +1,101 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-1377",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am 71 and lost vision in my right eye when I woke up this morning.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Did you experience any flashes of light or a curtain-like shadow moving across your vision when the loss occurred?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 2,
+        "facts": [
+          {
+            "id": "F1",
+            "text": "That eye feels unusual, but it is not painful."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Is the vision loss in your right eye sudden and painless, or did you experience any pain or gradual worsening?",
+        "selected_fact_ids": [
+          "F1"
+        ],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "ask_patient",
+        "utterance": "That eye feels unusual, but it is not painful."
+      },
+      {
+        "collection_actions": 3,
+        "exams": [
+          {
+            "id": "fundus_exam",
+            "images": [
+              "MM-1377-a.jpeg"
+            ],
+            "text": "A fundoscopic examination of the right eye is demonstrated in Figure A, while the left fundus appears normal."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Dilated fundus examination",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "fundus_exam"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_requests": []
+      },
+      {
+        "collection_actions": 3,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient presents with sudden painless vision loss. The fundus image (MM-1377-a.jpeg) displays a classic \"blood and thunder\" appearance, characterized by widespread, diffuse retinal hemorrhages and dilated, tortuous veins radiating from the optic disc. This specific pattern is pathognomonic for central retinal vein occlusion. While retinal detachment can cause vision loss, it typically presents with a visible retinal break or flap, not diffuse hemorrhage. Central retinal artery occlusion would show a pale, ischemic retina, not hemorrhages. Therefore, the findings strongly support option C.",
+    "result": {
+      "collection_actions": 3,
+      "id": "MM-1377",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "C",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Retinal detachment",
+      "B": "Central retinal artery occlusion",
+      "C": "Retinal vein occlusion",
+      "D": "Closed angle glaucoma",
+      "E": "Papilledema"
+    }
+  },
+  "score": {
+    "correct": true,
+    "id": "MM-1377"
+  }
+}

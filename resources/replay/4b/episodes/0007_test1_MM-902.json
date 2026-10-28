@@ -1,0 +1,119 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-902",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I have weight loss.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "format_repairs": 0,
+        "message": "I have already told you everything I know. I have nothing more to add.",
+        "patient_called": false,
+        "query": "Have you experienced any fever, chills, or night sweats recently?",
+        "state_after": "collecting",
+        "status": "exhausted",
+        "type": "ask_patient",
+        "utterance": "I have already told you everything I know. I have nothing more to add."
+      },
+      {
+        "case_image_attached": [
+          "source_image"
+        ],
+        "case_image_note": "An unlabeled image from the case file is attached to this examination request. It is not the result of the examination that was named.",
+        "collection_actions": 2,
+        "exams": [
+          {
+            "id": "source_image",
+            "images": [
+              "MM-902-a.jpeg"
+            ],
+            "text": "Unlabeled image from the case file. The source does not state its modality or body site."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "physical examination of the heart and lungs",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "source_image"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "physical examination of the heart and lungs"
+        ]
+      },
+      {
+        "collection_actions": 3,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Not provided for the requested examination.",
+        "query": "ultrasound of the neck to evaluate thyroid and lymph nodes",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "ultrasound of the neck to evaluate thyroid and lymph nodes"
+        ]
+      },
+      {
+        "block": {
+          "denied_query": "ultrasound of the neck to evaluate thyroid and lymph nodes",
+          "first_denied_turn": 3,
+          "rule": "exact"
+        },
+        "collection_actions": 4,
+        "format_repairs": 0,
+        "measurement_called": false,
+        "message": "Already unavailable in this encounter. Choose a different request or finish; findings remain unknown.",
+        "query": "ultrasound of the neck to evaluate thyroid and lymph nodes",
+        "state_after": "collecting",
+        "status": "blocked_unavailable",
+        "type": "request_exam"
+      },
+      {
+        "collection_actions": 4,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The image displays a prominent, irregular mass in the anterior neck, consistent with a thyroid nodule or goiter, alongside significant weight loss. This presentation strongly supports Thyroid cancer (A). While Gastric cancer (E) is a noted option, the visual evidence of a neck mass is specific to thyroid pathology and does not align with gastric findings. Lung cancer (B) and Nasopharyngeal cancer (C) typically present with different primary signs, and Melanoma (D) would show a pigmented skin lesion, which is absent here.",
+    "result": {
+      "collection_actions": 4,
+      "id": "MM-902",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "A",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Thyroid cancer",
+      "B": "Lung cancer",
+      "C": "Nasopharyngeal cancer",
+      "D": "Melanoma",
+      "E": "Gastric cancer"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-902"
+  }
+}

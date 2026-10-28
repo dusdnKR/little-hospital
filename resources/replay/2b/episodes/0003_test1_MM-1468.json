@@ -1,0 +1,57 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-1468",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 19-year-old male high school wide receiver, who. I am right-hand dominant, reports recurrent subluxation of the right shoulder.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "format_repairs": 0,
+        "message": "I have already told you everything I know. I have nothing more to add.",
+        "patient_called": false,
+        "query": "Does the right shoulder pain or subluxation worsen with overhead activities (e.g., throwing, lifting the arm above shoulder level) or activities that involve internal rotation and abduction? Does it improve with rest or stretching? Any history of trauma to the shoulder? Does the pain radiate to the neck or arm? Any numbness, tingling, or weakness in the arm or hand? Does the patient experience any morning stiffness or pain with movement? Is there any history of recent viral illness or fever? Does the patient have any other recent injuries or surgeries?",
+        "state_after": "collecting",
+        "status": "exhausted",
+        "type": "ask_patient",
+        "utterance": "I have already told you everything I know. I have nothing more to add."
+      },
+      {
+        "collection_actions": 1,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient is a 19-year-old male with recurrent right shoulder subluxation. This clinical presentation strongly supports a Bankart lesion (Option D), which is an anterior glenoid labral tear typically seen in young athletes with recurrent instability. While HAGL lesions (Option B) can occur in the same demographic, they are posterior and less likely to cause anterior subluxation. ALPSA lesions (Option C) are associated with anterior instability but are rare and usually present with significant pain and weakness rather than isolated subluxation. SLAP tears (Option E) affect the superior labrum and are not the primary cause of anterior instability. Rotator cuff tears (Option A) are less likely given the specific history of subluxation without mention of weakness or pain.",
+    "result": {
+      "collection_actions": 1,
+      "id": "MM-1468",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "D",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Rotator cuff tear",
+      "B": "HAGL lesion",
+      "C": "ALPSA lesion",
+      "D": "Bankart lesion",
+      "E": "SLAP tear"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-1468"
+  }
+}

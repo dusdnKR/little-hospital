@@ -1,0 +1,153 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-85",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 63-year-old female patient. I come to my primary care provider reporting dizziness and lightheadedness for the past four days.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [
+          {
+            "id": "P002",
+            "text": "I deny experiencing fever, chest pain, or dyspnea."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Do you experience fainting, fatigue, or shortness of breath?",
+        "selected_fact_ids": [
+          "P002"
+        ],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "ask_patient",
+        "utterance": "I deny experiencing fever, chest pain, or dyspnea."
+      },
+      {
+        "collection_actions": 2,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Have you noticed any palpitations or irregular heartbeats?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 3,
+        "format_repairs": 0,
+        "message": "You already asked this exact question; the answer will not change. Ask something different, request an examination, or finish.",
+        "patient_called": false,
+        "query": "Have you noticed any palpitations or irregular heartbeats?",
+        "state_after": "collecting",
+        "status": "blocked_repeat",
+        "type": "ask_patient"
+      },
+      {
+        "collection_actions": 4,
+        "exams": [
+          {
+            "id": "vital_signs",
+            "images": [],
+            "text": "Her vital signs show: temperature 36.6°C (97.9°F), blood pressure 110/70 mmHg, heart rate 45 beats/min, and oxygen saturation 98% on room air.\nThe cardiovascular exam reveals no abnormal heart sounds."
+          },
+          {
+            "id": "ecg",
+            "images": [
+              "MM-85-a.png"
+            ],
+            "text": "Source image for the requested examination."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Please obtain vital signs and perform a 12-lead ECG.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "vital_signs",
+          "ecg"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_requests": []
+      },
+      {
+        "collection_actions": 5,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Already provided; see earlier history.",
+        "query": "Please obtain a complete 12-lead ECG, including leads V1 through V6, to fully evaluate the rhythm and conduction intervals.",
+        "repeated_exam_ids": [
+          "ecg"
+        ],
+        "requested_exam_ids": [
+          "ecg"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "repeated",
+        "type": "request_exam",
+        "unavailable_requests": []
+      },
+      {
+        "collection_actions": 6,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Already provided; see earlier history.",
+        "query": "Please obtain a complete 12-lead ECG, including leads V1 through V6, to fully evaluate the rhythm and conduction intervals.",
+        "repeated_exam_ids": [
+          "ecg"
+        ],
+        "requested_exam_ids": [
+          "ecg"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "repeated",
+        "type": "request_exam",
+        "unavailable_requests": []
+      },
+      {
+        "collection_actions": 6,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient presents with dizziness and a heart rate of 45 bpm. The ECG image shows a regular rhythm with distinct P waves preceding every QRS complex, indicating intact AV conduction. The PR interval is constant and normal, while the rate is slow. This pattern of sinus bradycardia with preserved conduction rules out second- or third-degree AV blocks, which would show dropped beats or dissociation. Sick sinus syndrome typically involves pauses or tachy-brady patterns not seen here. Therefore, the findings support sinus bradycadia.\n\nE",
+    "result": {
+      "collection_actions": 6,
+      "id": "MM-85",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "E",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Mobitz type I second-degree AV block",
+      "B": "Sick sinus syndrome",
+      "C": "Mobitz type II second-degree AV block",
+      "D": "Third-degree AV block",
+      "E": "Sinus bradycardia"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-85"
+  }
+}

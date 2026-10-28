@@ -1,0 +1,15 @@
+{
+  "dataset": "TsinghuaC3I/MedXpertQA",
+  "revision": "7e7c465a68eb2b866926bfa59c8c9d17a8daba65",
+  "license": "MIT",
+  "files": {
+    "cases.jsonl": "c7ba287830cc0a694885761f83780285289b2c0892eaa8c391eb23f7e8f7d655",
+    "difficulty.jsonl": "03ca43a0ef601dea0196aeced790b0a025df0fa3581496034cdb90e856330257",
+    "division.json": "a8de8405f8565ebfe204ac905852e21c7eb66028b837d0683621470604d15c92",
+    "manifest.json": "2d0ddfc0919919d9e7ce3864cf96900ca505152bf633e474a0f245fb38c6e956",
+    "openings.jsonl": "45f1628efc0fe7831e8f6b24904454092348967fedb32e162b25022591fcc176",
+    "private_gold.jsonl": "5491847d5948d8604def16edb66cb6771c226f3935ba37423d1b57d4230def86",
+    "speech_profiles.json": "b17bbd87bf6bb324a9cc785ef006e68e36acc2097052707848a45876027d23a6"
+  },
+  "source_revision_url": "https://huggingface.co/datasets/TsinghuaC3I/MedXpertQA/tree/7e7c465a68eb2b866926bfa59c8c9d17a8daba65"
+}

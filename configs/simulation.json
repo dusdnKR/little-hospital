@@ -1,0 +1,10 @@
+{
+  "image_roots": [
+    "../resources/replay/images"
+  ],
+  "sources": {
+    "2B": "../resources/replay/2b",
+    "4B": "../resources/replay/4b",
+    "9B": "../resources/replay/9b"
+  }
+}

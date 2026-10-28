@@ -1,0 +1,3 @@
+EXAMINATION_NOTE = " Before you finish, you should have obtained the result of an examination that is relevant to the complaint. If a requested examination is not provided, request a different kind of examination that fits the complaint."
+REASONING_NOTE = " reasoning holds what you have just written about this record. Check it against the record and the images, then answer."
+NOTES_NOTE = " notes holds what you wrote after earlier training patients, once you had seen their confirmed diagnoses. Each note names the confirmed diagnosis it is about, which is named like one of the options here. They are your own lessons, not facts about this patient: let a note count for its diagnosis only where this record shows the findings it speaks of."

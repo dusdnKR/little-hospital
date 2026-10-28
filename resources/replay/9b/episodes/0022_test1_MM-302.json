@@ -1,0 +1,95 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-302",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am an elderly male patient, aged 87, with a medical history of chronic kidney disease, hypertension, and atrial fibrillation. I seek emergency care due to constipation and lower abdominal discomfort lasting three days.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "format_repairs": 1,
+        "message": "I have already told you everything I know. I have nothing more to add.",
+        "patient_called": false,
+        "query": "Have you noticed any changes in your bowel movements, such as blood, mucus, or a change in stool consistency?",
+        "state_after": "collecting",
+        "status": "exhausted",
+        "type": "ask_patient",
+        "utterance": "I have already told you everything I know. I have nothing more to add."
+      },
+      {
+        "collection_actions": 2,
+        "exams": [
+          {
+            "id": "physical_examination",
+            "images": [],
+            "text": "During physical assessment, the abdomen appears distended with right lower quadrant tenderness on palpation, but without rebound tenderness or guarding."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Perform abdominal examination including inspection, palpation, and auscultation to assess for distension, tenderness, masses, and bowel sounds.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "physical_examination"
+        ],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_requests": []
+      },
+      {
+        "collection_actions": 3,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Not provided for the requested examination.",
+        "query": "Perform a digital rectal examination to assess for stool impaction, masses, or blood.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "Perform a digital rectal examination to assess for stool impaction, masses, or blood."
+        ]
+      },
+      {
+        "collection_actions": 3,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient presents with constipation, abdominal distension, and right lower quadrant tenderness. The physical exam confirms distension and localized RLQ pain without peritonitis. While constipation is a symptom, the specific localization of pain and distension in an elderly patient with comorbidities raises suspicion for a mechanical obstruction. Cecal volvulus fits best because it classically causes massive cecal dilation and RLQ pain, distinguishing it from small bowel obstruction which typically presents with multiple air-fluid levels and more diffuse or central pain. Hiatal hernia and Ogilvie's syndrome do not explain the focal RLQ tenderness as well.",
+    "result": {
+      "collection_actions": 3,
+      "id": "MM-302",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "D",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Constipation",
+      "B": "Small bowel obstruction",
+      "C": "Ogilvie’s Syndrome (acute colonic pseudo-obstruction)",
+      "D": "Cecal volvulus",
+      "E": "Hiatal hernia"
+    }
+  },
+  "score": {
+    "correct": true,
+    "id": "MM-302"
+  }
+}

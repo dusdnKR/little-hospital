@@ -1,0 +1,74 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-1530",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 43-year-old individual. I come to medical attention with complaints of bilateral pain, swelling, and stiffness affecting both hands and feet.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "format_repairs": 0,
+        "message": "I have already told you everything I know. I have nothing more to add.",
+        "patient_called": false,
+        "query": "How long have you been experiencing these symptoms?",
+        "state_after": "collecting",
+        "status": "exhausted",
+        "type": "ask_patient",
+        "utterance": "I have already told you everything I know. I have nothing more to add."
+      },
+      {
+        "collection_actions": 2,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Not provided for the requested examination.",
+        "query": "Examine the hands and feet for joint swelling, tenderness, and range of motion.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "Examine the hands and feet for joint swelling, tenderness, and range of motion."
+        ]
+      },
+      {
+        "collection_actions": 2,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient presents with symmetric polyarthritis affecting hands and feet, a classic pattern for seronegative spondyloarthropathies. Reiter syndrome (reactive arthritis) fits this presentation best among the options, as it frequently causes asymmetric or symmetric peripheral arthritis, often with dactylitis. Sarcoidosis and miliary tuberculosis primarily involve lungs and systemic organs, not typically causing isolated symmetric hand/foot arthritis. Syphilis can cause arthritis but is less common as a primary presentation without other signs. Psoriasis causes arthritis but usually presents with characteristic skin plaques, which are not described here. Therefore, Reiter syndrome is the most likely diagnosis.",
+    "result": {
+      "collection_actions": 2,
+      "id": "MM-1530",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "B",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Sarcoidosis",
+      "B": "Reiter syndrome",
+      "C": "Syphilis",
+      "D": "Miliary tuberculosis",
+      "E": "Psoriasis"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-1530"
+  }
+}

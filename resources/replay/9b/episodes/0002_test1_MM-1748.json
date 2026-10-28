@@ -1,0 +1,161 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-1748",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 15-year-old girl. I come to the clinic with a several-month history of fatigue and shortness of breath.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "How would you describe the nature of your fatigue? Is it constant or does it come and go?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 2,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Do you have any other symptoms, such as dizziness, palpitations, or changes in your appetite or weight?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 3,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Have you noticed any changes in your weight, such as losing or gaining weight recently?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 4,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "Already provided; see earlier history.",
+        "query": "Have you noticed any changes in your breathing, such as getting out of breath easily or needing to breathe faster?",
+        "selected_fact_ids": [
+          "OPENING"
+        ],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "repeated",
+        "type": "ask_patient",
+        "utterance": "I am a 15-year-old girl. I come to the clinic with a several-month history of fatigue and shortness of breath."
+      },
+      {
+        "collection_actions": 5,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Have you noticed any changes in your appetite or weight recently?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 6,
+        "exams": [
+          {
+            "id": "vital_signs",
+            "images": [],
+            "text": "Her vital signs are as follows: temperature 97.6°F (36.4°C), blood pressure 120/81 mmHg, pulse 95/min, respirations 15/min, and oxygen saturation 98% on room air."
+          },
+          {
+            "id": "physical_examination",
+            "images": [],
+            "text": "Physical examination reveals scleral icterus and a palpable spleen below the left seventh intercostal space."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Perform a full physical examination, including vital signs, heart and lung auscultation, and assessment for signs of anemia or thyroid dysfunction.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "vital_signs",
+          "physical_examination"
+        ],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "heart and lung auscultation",
+          "assessment for signs of anemia or thyroid dysfunction"
+        ]
+      },
+      {
+        "collection_actions": 7,
+        "exams": [],
+        "format_repairs": 1,
+        "message": "Not provided for the requested examination.",
+        "query": "Perform a complete blood count (CBC) and reticulocyte count.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "Perform a complete blood count (CBC) and reticulocyte count."
+        ]
+      },
+      {
+        "collection_actions": 7,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient presents with fatigue, shortness of breath, scleral icterus, and splenomegaly, indicating chronic hemolysis. Sickle cell anemia (B) is less likely in a 15-year-old female without mentioned pain crises or specific demographics. Drug-induced (C) and autoimmune (E) anemias are typically acute or subacute, not spanning several months with significant splenomegaly. Disseminated intravascular coagulation (D) is an acute emergency. Hereditary spherocytosis (A) is the best fit because it causes chronic hemolytic anemia, presents with splenomegaly due to red cell sequestration, and is a common cause of this specific clinical picture in adolescents.",
+    "result": {
+      "collection_actions": 7,
+      "id": "MM-1748",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "A",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Hereditary spherocytosis",
+      "B": "Sickle cell anemia",
+      "C": "Drug-induced hemolytic anemia",
+      "D": "Disseminated intravascular coagulation",
+      "E": "Autoimmune hemolytic anemia"
+    }
+  },
+  "score": {
+    "correct": true,
+    "id": "MM-1748"
+  }
+}

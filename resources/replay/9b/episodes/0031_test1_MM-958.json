@@ -1,0 +1,129 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-958",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 57-year-old male undergoes coronary artery bypass grafting due to severe symptomatic coronary artery disease.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [
+          {
+            "id": "P004",
+            "text": "I have incisional chest pain but am otherwise asymptomatic."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Are you currently experiencing chest pain or discomfort?",
+        "selected_fact_ids": [
+          "P004"
+        ],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "ask_patient",
+        "utterance": "I have incisional chest pain but am otherwise asymptomatic."
+      },
+      {
+        "collection_actions": 2,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "Already provided; see earlier history.",
+        "query": "Does the chest pain radiate to your arm, jaw, or back?",
+        "selected_fact_ids": [
+          "P004"
+        ],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "repeated",
+        "type": "ask_patient",
+        "utterance": "I have incisional chest pain but am otherwise asymptomatic."
+      },
+      {
+        "collection_actions": 3,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Does the chest pain occur with exertion or improve with rest?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 4,
+        "exams": [
+          {
+            "id": "ecg",
+            "images": [
+              "MM-958-a.jpeg"
+            ],
+            "text": "The patient’s electrocardiogram is demonstrated below:"
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Perform a 12-lead ECG.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "ecg"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_requests": []
+      },
+      {
+        "collection_actions": 5,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Do you have shortness of breath, palpitations, or dizziness?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 5,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The ECG image displays a regular rhythm with distinct, upright P waves preceding every QRS complex in all leads, including the inverted P waves in aVR. This consistent P-wave morphology and the 1:1 relationship between atrial and ventricular activity confirm a sinus origin. The rate appears elevated, likely due to the patient's recent cardiac surgery and reported chest pain. This presentation rules out atrial flutter, which would show sawtooth waves, and atrial fibrillation, which lacks distinct P waves. Multifocal atrial tachycardia is excluded by the uniformity of the P waves. Therefore, the findings are most consistent with sinus tachycardia.\n\nSinus tachycardia",
+    "result": {
+      "collection_actions": 5,
+      "id": "MM-958",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "E",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Atrial flutter",
+      "B": "Multifocal atrial tachycardia",
+      "C": "Atrial fibrillation with rapid ventricular response",
+      "D": "Paroxysmal supraventricular tachycardia",
+      "E": "Sinus tachycardia"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-958"
+  }
+}

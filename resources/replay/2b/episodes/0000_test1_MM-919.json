@@ -1,0 +1,90 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-919",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 9-year-old girl. I am brought in by my parents, who report that I have complained of feeling dizzy several times during the past month while playing with friends on the playground.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [
+          {
+            "id": "P002",
+            "text": "During these episodes, I have looked pale and needed to stop and rest for a few minutes."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Has the dizziness been accompanied by any other symptoms such as headache, nausea, vomiting, tinnitus, hearing changes, or loss of balance? Has the frequency of the dizziness increased over the past month, and does it occur in relation to specific activities (e.g., standing up quickly, running, or playing on the playground)?",
+        "selected_fact_ids": [
+          "P002"
+        ],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "ask_patient",
+        "utterance": "During these episodes, I have looked pale and needed to stop and rest for a few minutes."
+      },
+      {
+        "collection_actions": 2,
+        "exams": [
+          {
+            "id": "physical_examination",
+            "images": [],
+            "text": "On physical examination, she appears well and is alert and interactive.\nShe has a normal S1 and a split S2 .\nShe has a 2/6 short systolic ejection murmur best heard at the left midsternal border.\nShe has normal peripheral pulses, has no cyanosis, and is warm and well perfused.\nShe has no hepatomegaly."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Obtain a complete physical examination including vital signs, neurological assessment (cranial nerves, reflexes, gait, coordination), and a focused eye exam (visual acuity, pupillary response, fundus examination) to evaluate for orthostatic hypotension, vestibular dysfunction, or other systemic causes.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "physical_examination"
+        ],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "neurological assessment (cranial nerves, reflexes, gait, coordination)",
+          "focused eye exam (visual acuity, pupillary response, fundus examination)"
+        ]
+      },
+      {
+        "collection_actions": 2,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient presents with dizziness, pallor, and a regular heart rate of 60 bpm with no P waves preceding QRS complexes. This specific ECG finding indicates Third-degree (complete) AV block. The physical exam shows a normal S1 and split S2, which is consistent with this diagnosis. Option B is the correct choice because the ECG explicitly shows a regular rhythm with a rate of 60 bpm and no P waves, confirming complete heart block. Option A is incorrect because the rate is 60 bpm, not bradycardia. Option C and D are incorrect because the ECG shows a complete block rather than a first or second-degree block. Option E is incorrect because there are no dropped beats or P waves not followed by QRS complexes, which are hallmarks of Mobitz type II.",
+    "result": {
+      "collection_actions": 2,
+      "id": "MM-919",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "B",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Sinus bradycardia without heart block",
+      "B": "Third-degree complete atrioventricular block",
+      "C": "First-degree atrioventricular block",
+      "D": "Second-degree atrioventricular block, Mobitz type 1",
+      "E": "Second-degree atrioventricular block, Mobitz type 2"
+    }
+  },
+  "score": {
+    "correct": true,
+    "id": "MM-919"
+  }
+}

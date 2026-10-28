@@ -1,0 +1,104 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-1754",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 69-year-old female. I present to the emergency department with a 2-week history of dizziness.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "format_repairs": 0,
+        "message": "I have already told you everything I know. I have nothing more to add.",
+        "patient_called": false,
+        "query": "Do you experience fainting, extreme tiredness, or shortness of breath?",
+        "state_after": "collecting",
+        "status": "exhausted",
+        "type": "ask_patient",
+        "utterance": "I have already told you everything I know. I have nothing more to add."
+      },
+      {
+        "case_image_attached": [
+          "source_image"
+        ],
+        "case_image_note": "An unlabeled image from the case file is attached to this examination request. It is not the result of the examination that was named.",
+        "collection_actions": 2,
+        "exams": [
+          {
+            "id": "source_image",
+            "images": [
+              "MM-1754-a.jpeg"
+            ],
+            "text": "Unlabeled image from the case file. The source does not state its modality or body site."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Vital signs and ECG",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "source_image"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "Vital signs and ECG"
+        ]
+      },
+      {
+        "collection_actions": 3,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Not provided for the requested examination.",
+        "query": "Neurological examination",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "Neurological examination"
+        ]
+      },
+      {
+        "collection_actions": 3,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The image displays a cup containing dark, tarry, and sticky material, which is characteristic of melena. Melena is a classic sign of an upper gastrointestinal bleed, where blood is digested as it passes through the stomach and intestines, turning it black. This finding directly supports option B. The other options are less likely: Dubin-Johnson syndrome and liver cirrhosis typically present with jaundice or hepatomegaly rather than melena; metastatic colon cancer usually causes hematochezia (bright red blood) rather than melena; and heavy-metal toxicity does not present with this specific physical finding.",
+    "result": {
+      "collection_actions": 3,
+      "id": "MM-1754",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "B",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Dubin-Johnson syndrome",
+      "B": "Upper gastrointestinal bleed",
+      "C": "Metastatic colon cancer",
+      "D": "Liver cirrhosis",
+      "E": "Heavy-metal toxicity"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-1754"
+  }
+}

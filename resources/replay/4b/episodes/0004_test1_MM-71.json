@@ -1,0 +1,115 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-71",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I recently immigrated from Pakistan and developed these lesions.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Do you have any other skin lesions elsewhere on your body, or any systemic symptoms like fever, weight loss, or night sweats?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 2,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Do you have a history of cancer, HIV, or any medications that suppress your immune system?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "case_image_attached": [
+          "source_image"
+        ],
+        "case_image_note": "An unlabeled image from the case file is attached to this examination request. It is not the result of the examination that was named.",
+        "collection_actions": 3,
+        "exams": [
+          {
+            "id": "source_image",
+            "images": [
+              "MM-71-a.jpeg"
+            ],
+            "text": "Unlabeled image from the case file. The source does not state its modality or body site."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Please perform a full physical examination of the skin to identify the specific characteristics of the lesions and check for any other sites of involvement.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "source_image"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "Please perform a full physical examination of the skin to identify the specific characteristics of the lesions and check for any other sites of involvement."
+        ]
+      },
+      {
+        "collection_actions": 4,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Do you have a history of tuberculosis or any exposure to it?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 4,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The image displays multiple annular, erythematous plaques with central clearing on the upper arm and shoulder. This classic \"targetoid\" morphology is highly characteristic of pityriasis rosea. While leprosy presents with hypopigmented patches, the lesions here are inflamed and ring-shaped, which does not fit the typical presentation of leprosy or granuloma annulare. The patient's history of immigration from Pakistan is a risk factor for leprosy, but the visual evidence strongly favors pityriasis rosea.",
+    "result": {
+      "collection_actions": 4,
+      "id": "MM-71",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "D",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Scrofula",
+      "B": "Tinea corporis",
+      "C": "Granuloma annulare",
+      "D": "Pityriasis rosea",
+      "E": "Leprosy"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-71"
+  }
+}

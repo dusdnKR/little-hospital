@@ -1,0 +1,31 @@
+{
+  "model_id": "Qwen/Qwen3.5-4B",
+  "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "model_directory": "models/Qwen3.5-4B",
+  "max_collection_actions": 8,
+  "max_context_tokens": 16384,
+  "image_long_side_px": 1024,
+  "image_max_pixels": 1048576,
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "enable_thinking": false,
+  "do_sample": false,
+  "seed": 42,
+  "max_new_tokens": {
+    "doctor": 512,
+    "patient": 256,
+    "measurement": 256,
+    "final": 128,
+    "image_probe": 64,
+    "reflection": 128,
+    "final_open": 128,
+    "judge": 160,
+    "direct": 64
+  },
+  "maximum_gpu_job_minutes": 60,
+  "allowed_gpu_name_contains": "A100",
+  "backend": "transformers_in_process_single_model",
+  "max_model_calls": 400,
+  "max_backend_seconds": 2700,
+  "reflection": false
+}

@@ -1,0 +1,118 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-970",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 55-year-old female wheelchair user with multiple sclerosis. I present with a 3-day history of sharp, stabbing chest pain that worsens with coughing and blood-tinged sputum.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Does your chest pain radiate to your jaw or back?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 2,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Do you have shortness of breath or difficulty breathing?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 3,
+        "format_repairs": 0,
+        "message": "You already asked this exact question; the answer will not change. Ask something different, request an examination, or finish.",
+        "patient_called": false,
+        "query": "Do you have shortness of breath or difficulty breathing?",
+        "state_after": "collecting",
+        "status": "blocked_repeat",
+        "type": "ask_patient"
+      },
+      {
+        "collection_actions": 4,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Do you have a fever or chills?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 5,
+        "exams": [
+          {
+            "id": "radiograph",
+            "images": [
+              "MM-970-a.jpeg"
+            ],
+            "text": "Source image for the requested examination."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Chest X-ray",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "radiograph"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_requests": []
+      },
+      {
+        "collection_actions": 5,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The chest radiograph shows a right-sided pleural effusion, indicated by the homogeneous opacity at the right base obscuring the diaphragm and costophrenic angle. The patient's history of sharp chest pain worsening with coughing and blood-tinged sputum is classic for pleuritic pain associated with an effusion or underlying infection. While bacterial pneumonia (E) can cause effusions, the specific combination of pleuritic pain and the radiographic finding of a significant effusion without clear consolidation makes a parapneumonic effusion or empyema secondary to pneumonia the most likely diagnosis among the choices. Sarcoidosis (D) typically presents with bilateral hilar adenopathy, which is not seen here.",
+    "result": {
+      "collection_actions": 5,
+      "id": "MM-970",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "E",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Bronchogenic carcinoma",
+      "B": "Pulmonary embolism",
+      "C": "Pulmonary edema",
+      "D": "Sarcoidosis",
+      "E": "Bacterial pneumonia"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-970"
+  }
+}

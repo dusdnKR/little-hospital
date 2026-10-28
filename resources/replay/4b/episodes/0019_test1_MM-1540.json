@@ -1,0 +1,98 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-1540",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 24-year-old gymnast with a right shoulder injury. I am undergoing preoperative evaluation.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "format_repairs": 0,
+        "message": "I have already told you everything I know. I have nothing more to add.",
+        "patient_called": false,
+        "query": "Do you experience pain or weakness when reaching overhead or lifting your arm?",
+        "state_after": "collecting",
+        "status": "exhausted",
+        "type": "ask_patient",
+        "utterance": "I have already told you everything I know. I have nothing more to add."
+      },
+      {
+        "collection_actions": 2,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Not provided for the requested examination.",
+        "query": "Request a physical examination of the right shoulder, specifically assessing for pain with overhead reaching, lifting, and any positive special tests for SLAP tears or Bankart lesions.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "Request a physical examination of the right shoulder, specifically assessing for pain with overhead reaching, lifting, and any positive special tests for SLAP tears or Bankart lesions."
+        ]
+      },
+      {
+        "collection_actions": 3,
+        "exams": [
+          {
+            "id": "mri",
+            "images": [
+              "MM-1540-a.jpeg",
+              "MM-1540-b.jpeg"
+            ],
+            "text": "Two images are provided: Figure A shows an MRI scan, and Figure B displays an arthroscopic view obtained through an anterior portal while the patient is in lateral decubitus position."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Request an MRI of the right shoulder to visualize the superior labrum and assess for SLAP tears or Bankart lesions.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "mri"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_requests": []
+      },
+      {
+        "collection_actions": 3,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The MRI (Figure A) shows a large, displaced avulsion of the glenohumeral ligament from the lesser tuberosity, consistent with a HAGL lesion. The arthroscopic view (Figure B) confirms this by visualizing the torn ligament and associated labral defect. This specific pattern of posterior ligamentous avulsion distinguishes it from the other options, which involve different structures like the rotator cuff or superior labrum. Therefore, the most likely diagnosis is Humeral avulsion of the glenohumeral ligament (HAGL).",
+    "result": {
+      "collection_actions": 3,
+      "id": "MM-1540",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "B",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Partial articular sided thickness rotator cuff tear (PASTA)",
+      "B": "Humeral avulsion of the glenohumeral ligament (HAGL)",
+      "C": "Glenoid labral articular defect (GLAD)",
+      "D": "Superior labral anterior posterior lesion (SLAP)",
+      "E": "Anterior labral periosteal sleeve avulsion (ALPSA)"
+    }
+  },
+  "score": {
+    "correct": true,
+    "id": "MM-1540"
+  }
+}

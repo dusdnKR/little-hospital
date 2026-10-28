@@ -1,0 +1,86 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-1634",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 71-year-old male. I present to the emergency department with the sudden onset of sharp, pressure-like chest pain localized to the left side.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Is the pain described as tearing or ripping, and does it radiate to your back?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 2,
+        "exams": [
+          {
+            "id": "vital_signs",
+            "images": [],
+            "text": "On examination, his temperature is 37.2°C (99°F), pulse is 105/min, respirations are 23/min, blood pressure is 90/60 mmHg, and oxygen saturation is 90% on room air.\nHe appears pale and diaphoretic."
+          },
+          {
+            "id": "physical_examination",
+            "images": [],
+            "text": "A holosystolic murmur is heard at the left mid sternal border, which intensifies with a supine leg raise.\nLung examination is unremarkable."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Vital signs and physical examination focusing on pulse deficits and blood pressure differentials between arms.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "vital_signs",
+          "physical_examination"
+        ],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_requests": []
+      },
+      {
+        "collection_actions": 2,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient presents with hypotension, tachycardia, and a new holosystolic murmur at the left sternal border that intensifies with leg raise, indicating acute mitral regurgitation. This mechanical complication of acute myocardial infarction explains the sudden chest pain and hemodynamic collapse. While pulmonary embolism is a differential for hypotension and tachycardia, the specific murmur and its dynamic nature strongly support acute MI over PE.",
+    "result": {
+      "collection_actions": 2,
+      "id": "MM-1634",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "D",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Pulmonary arterial hypertension",
+      "B": "Cor pulmonale",
+      "C": "COPD exacerbation",
+      "D": "Acute myocardial infarction",
+      "E": "Acute pulmonary embolism"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-1634"
+  }
+}

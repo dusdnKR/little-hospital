@@ -1,0 +1,134 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-477",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 16-year-old female. I present with a lifelong history of recurrent respiratory infections affecting my lungs, ears, and sinuses.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [
+          {
+            "id": "P002",
+            "text": "My medical history includes tympanostomy tube placement at age 3 and multiple sinus surgeries, with the most recent one performed a year ago."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Have you ever been told you have a problem with your immune system, or have you had infections that were hard to treat or didn't respond well to antibiotics?",
+        "selected_fact_ids": [
+          "OPENING",
+          "P002"
+        ],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "ask_patient",
+        "utterance": "I am a 16-year-old female. I present with a lifelong history of recurrent respiratory infections affecting my lungs, ears, and sinuses. My medical history includes tympanostomy tube placement at age 3 and multiple sinus surgeries, with the most recent one performed a year ago."
+      },
+      {
+        "collection_actions": 2,
+        "format_repairs": 0,
+        "message": "I have already told you everything I know. I have nothing more to add.",
+        "patient_called": false,
+        "query": "Do you have a family history of similar recurrent infections, or does anyone in your family have a known immune disorder?",
+        "state_after": "collecting",
+        "status": "exhausted",
+        "type": "ask_patient",
+        "utterance": "I have already told you everything I know. I have nothing more to add."
+      },
+      {
+        "collection_actions": 3,
+        "exams": [
+          {
+            "id": "physical_examination",
+            "images": [],
+            "text": "On physical examination, crackles and rhonchi are heard throughout the left chest."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Perform a complete physical examination, including inspection of the ears, nose, throat, and chest auscultation, and assess for signs of chronic sinusitis or bronchiectasis.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "physical_examination"
+        ],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "inspection of the ears",
+          "An additional part of the original request could not be matched.",
+          "assess for signs of chronic sinusitis"
+        ]
+      },
+      {
+        "collection_actions": 4,
+        "exams": [
+          {
+            "id": "radiograph",
+            "images": [],
+            "text": "A recent chest X-ray revealed a left-sided infiltrate, which failed to respond to a 5-day course of azithromycin."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Perform a chest X-ray to evaluate for bronchiectasis or other structural lung abnormalities.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "radiograph"
+        ],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_requests": []
+      },
+      {
+        "collection_actions": 5,
+        "format_repairs": 0,
+        "message": "The patient already said there is nothing more to add. Request an examination or finish.",
+        "patient_called": false,
+        "query": "Have you ever been told you have cystic fibrosis, or have you had genetic testing for it?",
+        "state_after": "collecting",
+        "status": "blocked_exhausted",
+        "type": "ask_patient"
+      },
+      {
+        "collection_actions": 5,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient is a 16-year-old female with a lifelong history of recurrent infections affecting the lungs, ears, and sinuses, requiring early surgical interventions. Physical exam shows left-sided crackles and rhonchi, and the chest X-ray reveals a left-sided infiltrate unresponsive to antibiotics. This triad of chronic sinusitis, otitis media, and bronchiectasis (suggested by chronic infiltrates) is the classic presentation of Primary ciliary dyskinesia. While Cystic fibrosis causes similar respiratory issues, the specific combination of ear and sinus involvement from a young age without mention of pancreatic insufficiency or failure to thrive makes PCD the stronger fit. Common variable immunodeficiency typically presents later in childhood or adolescence and is less likely to cause such early, severe structural ear/sinus disease. Chronic aspiration and chronic granulomatous disease do not match the lifelong, multi-site infectious pattern as well.",
+    "result": {
+      "collection_actions": 5,
+      "id": "MM-477",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "B",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Cystic fibrosis",
+      "B": "Primary ciliary dyskinesia",
+      "C": "Common variable immunodeficiency",
+      "D": "Chronic granulomatous disease",
+      "E": "Chronic aspiration"
+    }
+  },
+  "score": {
+    "correct": true,
+    "id": "MM-477"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-1172",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a patient. I present with yellow discoloration of the palms and soles.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Do you have any other symptoms, such as fatigue, nausea, abdominal pain, or dark urine?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "case_image_attached": [
+          "source_image_unspecified"
+        ],
+        "case_image_note": "An unlabeled image from the case file is attached to this examination request. It is not the result of the examination that was named.",
+        "collection_actions": 2,
+        "exams": [
+          {
+            "id": "source_image_unspecified",
+            "images": [
+              "MM-1172-a.jpeg"
+            ],
+            "text": "Unlabeled image from the case file. The source does not state its modality or body site."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Physical examination of the skin, focusing on the palms and soles for jaundice, and assessment of sclera for icterus.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "source_image_unspecified"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "Physical examination of the skin, focusing on the palms and soles for jaundice, and assessment of sclera for icterus."
+        ]
+      },
+      {
+        "collection_actions": 3,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Do you have any history of liver disease, alcohol use, or recent medication use?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 4,
+        "format_repairs": 0,
+        "message": "You already asked this exact question; the answer will not change. Ask something different, request an examination, or finish.",
+        "patient_called": false,
+        "query": "Do you have any history of liver disease, alcohol use, or recent medication use?",
+        "state_after": "collecting",
+        "status": "blocked_repeat",
+        "type": "ask_patient"
+      },
+      {
+        "collection_actions": 4,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient presents with yellow discoloration of the palms and soles. The supplied image (MM-1172-a.jpeg) shows a hand with diffuse, generalized yellowing of the skin, consistent with jaundice. This finding supports Hyperlipidemia type III, which can cause eruptive xanthomas and xanthelasma, often presenting with yellowish skin changes. While Syphilis causes palmar/plantar lesions, the image shows diffuse color change rather than discrete papules or plaques, making it less likely.",
+    "result": {
+      "collection_actions": 4,
+      "id": "MM-1172",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "E",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Syphilis",
+      "B": "Amiodarone exposure",
+      "C": "Diabetes mellitus",
+      "D": "Vitamin B12 deficiency",
+      "E": "Hyperlipidemia type III"
+    }
+  },
+  "score": {
+    "correct": false,
+    "id": "MM-1172"
+  }
+}

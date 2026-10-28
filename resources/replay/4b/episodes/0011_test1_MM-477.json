@@ -1,0 +1,109 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-477",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 16-year-old female. I present with a lifelong history of recurrent respiratory infections affecting my lungs, ears, and sinuses.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Do you have a family history of recurrent infections or immune disorders?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 2,
+        "format_repairs": 0,
+        "message": "You already asked this exact question; the answer will not change. Ask something different, request an examination, or finish.",
+        "patient_called": false,
+        "query": "Do you have a family history of recurrent infections or immune disorders?",
+        "state_after": "collecting",
+        "status": "blocked_repeat",
+        "type": "ask_patient"
+      },
+      {
+        "collection_actions": 3,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Do you have a history of severe infections with catalase-positive organisms, such as Staphylococcus aureus, Nocardia, or Aspergillus?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 4,
+        "format_repairs": 0,
+        "message": "You already asked this exact question; the answer will not change. Ask something different, request an examination, or finish.",
+        "patient_called": false,
+        "query": "Do you have a history of severe infections with catalase-positive organisms, such as Staphylococcus aureus, Nocardia, or Aspergillus?",
+        "state_after": "collecting",
+        "status": "blocked_repeat",
+        "type": "ask_patient"
+      },
+      {
+        "collection_actions": 5,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Not provided for the requested examination.",
+        "query": "Request a neutrophil function test (DHR flow cytometry) to evaluate for Chronic Granulomatous Disease.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "neutrophil function test (DHR flow cytometry)"
+        ]
+      },
+      {
+        "collection_actions": 5,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient is a 16-year-old female with lifelong recurrent respiratory infections affecting lungs, ears, and sinuses. This triad of chronic sinopulmonary infections is the hallmark of Primary ciliary dyskinesia, where defective ciliary function impairs mucociliary clearance. While Common variable immunodeficiency also causes recurrent infections, it typically presents with more severe systemic immune failure rather than the specific pattern of ciliary-related sinus and ear involvement described. Cystic fibrosis usually presents earlier with meconium ileus or pancreatic insufficiency, and the other options do not fit the lifelong respiratory pattern as well. Therefore, Primary ciliary dyskinesia is the most likely diagnosis.",
+    "result": {
+      "collection_actions": 5,
+      "id": "MM-477",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "B",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Cystic fibrosis",
+      "B": "Primary ciliary dyskinesia",
+      "C": "Common variable immunodeficiency",
+      "D": "Chronic granulomatous disease",
+      "E": "Chronic aspiration"
+    }
+  },
+  "score": {
+    "correct": true,
+    "id": "MM-477"
+  }
+}

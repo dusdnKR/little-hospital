@@ -1,0 +1,153 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-113",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am a 51-year-old male. I present to the emergency department with progressive symptoms over two days including sore throat, difficulty swallowing, and breathing problems.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [
+          {
+            "id": "P003",
+            "text": "I report having a fever of 38.7°C (101.7°F)."
+          }
+        ],
+        "format_repairs": 1,
+        "query": "Do you have a fever or chills?",
+        "selected_fact_ids": [
+          "P003"
+        ],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "ask_patient",
+        "utterance": "I report having a fever of 38.7°C (101.7°F)."
+      },
+      {
+        "collection_actions": 2,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Have you noticed any drooling or inability to open your mouth fully?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 3,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Have you noticed any neck swelling, stiffness, or pain when turning your head?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 4,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Have you noticed any change in your voice quality, such as hoarseness or a muffled 'hot potato' voice?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 5,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "Already provided; see earlier history.",
+        "query": "Have you noticed any difficulty breathing, shortness of breath, or a feeling of tightness in your chest?",
+        "selected_fact_ids": [
+          "OPENING"
+        ],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "repeated",
+        "type": "ask_patient",
+        "utterance": "I am a 51-year-old male. I present to the emergency department with progressive symptoms over two days including sore throat, difficulty swallowing, and breathing problems."
+      },
+      {
+        "collection_actions": 6,
+        "exams": [],
+        "format_repairs": 0,
+        "message": "Not provided for the requested examination.",
+        "query": "Perform a thorough head and neck examination, including inspection of the oropharynx for swelling, erythema, or uvular deviation, and assessment of trismus (jaw opening) and neck range of motion.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "Perform a thorough head and neck examination, including inspection of the oropharynx for swelling, erythema, or uvular deviation, and assessment of trismus (jaw opening) and neck range of motion."
+        ]
+      },
+      {
+        "collection_actions": 7,
+        "exams": [],
+        "format_repairs": 1,
+        "message": "Not provided for the requested examination.",
+        "query": "Perform a focused examination of the oropharynx to assess for uvular deviation, tonsillar swelling, and erythema, and assess trismus by attempting to open the patient's mouth.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [],
+        "requested_image_exam": false,
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "request_exam",
+        "unavailable_message": "Not provided for the requested examination.",
+        "unavailable_requests": [
+          "Perform a focused examination of the oropharynx to assess for uvular deviation, tonsillar swelling, and erythema, and assess trismus by attempting to open the patient's mouth."
+        ]
+      },
+      {
+        "collection_actions": 7,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The patient presents with high fever, sore throat, dysphagia, and breathing difficulty, indicating a severe airway threat. The history lacks specific findings like drooling or tripod positioning often seen in epiglottitis, nor does it mention neck stiffness typical of retropharyngeal abscess. While the provided note discusses epiglottitis, the clinical picture of progressive dysphagia and breathing issues in a 51-year-old male without acute viral prodrome symptoms makes malignancy a strong consideration. However, given the acute two-day progression and airway compromise, an acute infection like peritonsillar abscess or retropharyngeal abscess is more likely than carcinoma. Without imaging showing a specific mass or abscess location, the most dangerous and likely acute cause of these specific symptoms is a deep neck space infection. Among options, peritonsillar abscess fits the sore throat and dysphagia well, but retropharyngeal abscess better explains the breathing problems and fever in this context. Yet, without definitive imaging, the acute airway obstruction with fever strongly points to a deep neck infection. Re-evaluating the options against the acute nature: Epiglottitis is less likely without drooling. Foreign body is possible but less likely",
+    "result": {
+      "collection_actions": 7,
+      "id": "MM-113",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "A",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Retropharyngeal abscess",
+      "B": "Foreign body aspiration",
+      "C": "Epiglottitis",
+      "D": "Head and neck squamous cell carcinoma",
+      "E": "Peritonsillar abscess"
+    }
+  },
+  "score": {
+    "correct": true,
+    "id": "MM-113"
+  }
+}

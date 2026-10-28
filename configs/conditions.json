@@ -1,0 +1,16 @@
+{
+  "authorized": true,
+  "conditions": [
+    "2B/self",
+    "2B/key",
+    "2B/key_dx",
+    "4B/self",
+    "4B/key",
+    "4B/key_dx",
+    "9B/self",
+    "9B/key",
+    "9B/key_dx"
+  ],
+  "reason": "Enable the configured training and evaluation conditions after the CPU and smoke checks pass.",
+  "test_authorized": true
+}

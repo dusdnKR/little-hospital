@@ -1,0 +1,115 @@
+{
+  "phase": "test1",
+  "trace": {
+    "id": "MM-1377",
+    "initial_doctor_view": {
+      "history": [],
+      "public_context": "I am 71 and lost vision in my right eye when I woke up this morning.",
+      "remaining_actions": 8,
+      "request_rule": "Examinations in unavailable_exams cannot be requested again in this encounter; their findings stay unknown, not normal or negative. Rephrasing a blocked request does not make it available. An identical question is not answered twice. Once the patient says there is nothing more to add, further history questions return nothing. A blocked attempt still spends one action. For a compound request, omit its blocked part and request the rest separately.",
+      "state": "collecting",
+      "task": "Determine the most likely diagnosis for this case.",
+      "unavailable_exams": []
+    },
+    "events": [
+      {
+        "collection_actions": 1,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Did you have any eye surgery, such as cataract surgery, or a history of diabetes?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 2,
+        "exams": [
+          {
+            "id": "fundus_exam",
+            "images": [
+              "MM-1377-a.jpeg"
+            ],
+            "text": "A fundoscopic examination of the right eye is demonstrated in Figure A, while the left fundus appears normal."
+          }
+        ],
+        "format_repairs": 0,
+        "query": "Please perform a dilated fundus examination of the right eye to visualize the retina and optic nerve.",
+        "repeated_exam_ids": [],
+        "requested_exam_ids": [
+          "fundus_exam"
+        ],
+        "requested_image_exam": true,
+        "state_after": "collecting",
+        "status": "provided",
+        "type": "request_exam",
+        "unavailable_requests": []
+      },
+      {
+        "collection_actions": 3,
+        "facts": [],
+        "format_repairs": 0,
+        "message": "I don't know about that.",
+        "query": "Did you have any recent eye surgery, such as cataract surgery, or a history of diabetes?",
+        "selected_fact_ids": [],
+        "speaker": "patient",
+        "state_after": "collecting",
+        "status": "unavailable",
+        "type": "ask_patient",
+        "utterance": "I don't know about that."
+      },
+      {
+        "collection_actions": 4,
+        "format_repairs": 0,
+        "message": "You already asked this exact question; the answer will not change. Ask something different, request an examination, or finish.",
+        "patient_called": false,
+        "query": "Did you have any recent eye surgery, such as cataract surgery, or a history of diabetes?",
+        "state_after": "collecting",
+        "status": "blocked_repeat",
+        "type": "ask_patient"
+      },
+      {
+        "collection_actions": 5,
+        "format_repairs": 0,
+        "message": "You already asked this exact question; the answer will not change. Ask something different, request an examination, or finish.",
+        "patient_called": false,
+        "query": "Did you have any recent eye surgery, such as cataract surgery, or a history of diabetes?",
+        "state_after": "collecting",
+        "status": "blocked_repeat",
+        "type": "ask_patient"
+      },
+      {
+        "collection_actions": 5,
+        "format_repairs": 0,
+        "state_after": "awaiting_final",
+        "status": "finished",
+        "type": "finish"
+      }
+    ],
+    "reasoning": "The fundus image displays a classic \"blood and thunder\" appearance, characterized by diffuse retinal hemorrhages and significant venous dilation and tortuosity. This pattern is pathognomonic for Central Retinal Vein Occlusion (CRVO). While Retinal Detachment presents with a curtain-like shadow, and Central Retinal Artery Occlusion shows a pale, ischemic retina with attenuated arteries, the extensive hemorrhagic congestion seen here specifically supports CRVO over these alternatives.",
+    "result": {
+      "collection_actions": 5,
+      "id": "MM-1377",
+      "stop_reason": "doctor_finish",
+      "submission": {
+        "answer": "C",
+        "format_repairs": 0,
+        "valid": true
+      }
+    },
+    "final_choices": {
+      "A": "Retinal detachment",
+      "B": "Central retinal artery occlusion",
+      "C": "Retinal vein occlusion",
+      "D": "Closed angle glaucoma",
+      "E": "Papilledema"
+    }
+  },
+  "score": {
+    "correct": true,
+    "id": "MM-1377"
+  }
+}
