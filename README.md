@@ -9,7 +9,7 @@
 [![Transformers](https://img.shields.io/badge/Transformers-5.3-FFD21E?style=flat-square)](https://huggingface.co/docs/transformers/)&nbsp;
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-<img src="assets/figure3.png" alt="Memory retrieval by model and test set, and diagnostic accuracy changes by retrieved memory type" width="100%">
+<img src="assets/figure2.png" alt="Memory retrieval by model and test set, and diagnostic accuracy changes by retrieved memory type" width="100%">
 
 </div>
 
