@@ -9,7 +9,9 @@
 [![Transformers](https://img.shields.io/badge/Transformers-5.3-FFD21E?style=flat-square)](https://huggingface.co/docs/transformers/)&nbsp;
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-<img src="assets/figure2.png" alt="Memory retrieval by model and test set, and diagnostic accuracy changes by retrieved memory type" width="100%">
+![Little Hospital simulation at 4x playback speed](assets/simulation.gif)
+
+<em>Hospital simulation replay at 4× speed.</em>
 
 </div>
 
@@ -19,13 +21,19 @@
 
 A diagnostic agent must decide what to ask and which examinations to request before choosing a diagnosis. Useful experience must transfer between patients without treating an earlier patient's findings as facts about the current patient.
 
-**Little Hospital** pairs a multi-agent diagnosis workflow with a visual hospital simulation. The doctor stores lessons after completed encounters, recalls information-gathering advice by clinical presentation, and retrieves diagnostic notes using candidate disease names, without updating model weights.
+**Little Hospital** combines a multi-agent diagnosis workflow with a visual hospital simulation. The doctor learns from completed encounters through an external memory, while the simulation makes recorded conversations, examinations, and patient movement visible throughout each visit.
 
 ## Paper
 
 Submitted to the Korea Software Congress (KSC) 2026. Publication details will be added when available.
 
 ## Method
+
+The doctor gathers evidence through questions to the patient agent and requests to the examination agent, then reasons over the returned information and images to select a diagnosis. The agents run on local Qwen3.5 models through Hugging Face Transformers.
+
+<img src="assets/figure2.png" alt="Little Hospital workflow: patient and examination agents supply evidence to the doctor; reflection stores encounter lessons in memory, which is retrieved by symptoms during information collection and by diagnosis candidates during final reasoning" width="100%">
+
+After each training encounter, the doctor reflects on the visit and stores reusable lessons in an external notebook. Symptom-based retrieval supplies advice on what to ask or examine; diagnosis-based retrieval supplies relevant diagnostic notes when enabled. Model weights remain fixed, and evaluation uses a frozen notebook.
 
 | Component | Function |
 |:---:|---|
@@ -36,8 +44,6 @@ Submitted to the Korea Software Congress (KSC) 2026. Publication details will be
 | `key` | Writes collection and diagnosis lessons after receiving the answer sheet; recalls collection lessons only. |
 | `key_dx` | Adds diagnosis-note retrieval by all five candidate disease names. |
 | Evaluation | Freezes memory, checks information boundaries, and replays recorded calls to audit each run. |
-
-The inference pipeline uses local Hugging Face Transformers models. The desktop simulation replays saved encounters so that conversations, examinations, and patient movement can be inspected without loading model weights.
 
 ## Repository layout
 
@@ -82,9 +88,7 @@ python -m unittest discover -s tests -b
 
 ### Running the simulation
 
-![Little Hospital simulation at 4x playback speed](assets/simulation.gif)
-
-The GIF shows the simulation at **4× speed**. Start the same playback locally with the bundled encounter records; no model download, GPU, or network connection is needed.
+Replay the bundled encounter records at **4× speed**, as shown in the preview above. The desktop simulation displays saved interactions without loading model weights or generating new diagnoses; no GPU or network connection is needed.
 
 ```bash
 python -m clinical_memory simulate --speed 4 --language en
