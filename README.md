@@ -11,8 +11,6 @@
 
 ![Little Hospital simulation at 4x playback speed](assets/simulation.gif)
 
-<em>Hospital simulation replay at 4× speed.</em>
-
 </div>
 
 ---
