@@ -4,9 +4,9 @@
 
 **Development of a Memory-Based Self-Evolving Multi-Agent Learning Method and a Medical Diagnosis Simulation Environment**
 
-[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)&nbsp;
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.7-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)&nbsp;
-[![Transformers](https://img.shields.io/badge/Transformers-5.3-FFD21E?style=flat-square)](https://huggingface.co/docs/transformers/)&nbsp;
+[![Transformers](https://img.shields.io/badge/Transformers-5.3-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/docs/transformers/)&nbsp;
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)&nbsp;
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 ![Little Hospital simulation at 4x playback speed](assets/simulation.gif)
@@ -25,7 +25,7 @@ A diagnostic agent must decide what to ask and which examinations to request bef
 
 ## Paper
 
-Submitted to the Korea Software Congress (KSC) 2026. Publication details will be added when available.
+Under review at *Korea Software Congress (KSC) 2026*.
 
 ## Method
 
@@ -59,7 +59,7 @@ little-hospital/
 │   ├── evaluation/          # Encounter execution and deterministic replay audit
 │   ├── analysis/            # Paired comparisons, bootstrap intervals and reports
 │   └── simulation/          # Desktop playback of final recorded encounters
-├── assets/                  # Paper figure and simulation GIF
+├── assets/                  # Method figure and simulation GIF
 ├── configs/                 # Dataset, model, experiment and simulation settings
 ├── resources/               # Curated reproduction inputs and simulation replay records
 ├── scripts/                 # Local launchers and Slurm jobs
@@ -150,8 +150,8 @@ The report writes `results/summary.json` from completed audited runs. A paired c
 
 | | |
 |---|---|
-| **Clinical agents** | S. Schmidgall et al., "AgentClinic: a multimodal benchmark for tool-using clinical AI agents," *npj Digital Medicine*, 2026. ([Code](https://github.com/SamuelSchmidgall/AgentClinic)) — studies diagnosis through sequential patient interaction and examination requests. |
-| **Self-evolving simulation** | M. Almansoori, K. Kumar, and H. Cholakkal, "Self-Evolving Multi-Agent Simulations for Realistic Clinical Interactions," *MICCAI*, 2025. ([Code](https://github.com/MAXNORM8650/MedAgentSim)) — explores experience reuse in simulated clinical interactions. |
+| **Related benchmark** | S. Schmidgall et al., "AgentClinic: a multimodal benchmark for tool-using clinical AI agents," *npj Digital Medicine*, 2026. ([Code](https://github.com/SamuelSchmidgall/AgentClinic)) — studies diagnosis through sequential patient interaction and examination requests. |
+| **Related method** | M. Almansoori, K. Kumar, and H. Cholakkal, "Self-Evolving Multi-Agent Simulations for Realistic Clinical Interactions," *MICCAI*, 2025. ([Code](https://github.com/MAXNORM8650/MedAgentSim)) — explores experience reuse in simulated clinical interactions. |
 | **Dataset** | Y. Zuo et al., "MedXpertQA: Benchmarking Expert-Level Medical Reasoning and Understanding," *ICML*, 2025. ([Code](https://github.com/TsinghuaC3I/MedXpertQA)) — provides the source questions, answer options, and medical images. |
 
 ## Acknowledgment
@@ -164,4 +164,4 @@ Released under the [MIT License](LICENSE). MedXpertQA-derived inputs and replay 
 
 ## Citation
 
-The manuscript is unpublished; a BibTeX entry will be added when its bibliographic details are available.
+This work is under review; a BibTeX entry will be added once it is published.
